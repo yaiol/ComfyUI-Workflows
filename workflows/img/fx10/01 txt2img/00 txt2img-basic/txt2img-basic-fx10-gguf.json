@@ -1,6 +1,6 @@
 {
-  "last_node_id": 68,
-  "last_link_id": 138,
+  "last_node_id": 69,
+  "last_link_id": 142,
   "nodes": [
     {
       "id": 39,
@@ -120,7 +120,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -133,15 +133,17 @@
         {
           "name": "CONDITIONING",
           "type": "CONDITIONING",
+          "shape": 3,
           "links": [
             56
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
       "title": "zero_out",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "ConditioningZeroOut"
       },
       "widgets_values": [],
@@ -167,14 +169,16 @@
         {
           "name": "LATENT",
           "type": "LATENT",
+          "shape": 3,
           "links": [
             34
-          ],
-          "shape": 3
+          ]
         }
       ],
       "title": "latent_image",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "EmptyLatentImage"
       },
       "widgets_values": [
@@ -251,7 +255,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -277,6 +281,8 @@
       ],
       "title": "vae_decode",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "VAEDecode"
       },
       "widgets_values": []
@@ -295,34 +301,36 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
           "name": "MODEL",
           "type": "*",
-          "link": 117,
+          "shape": 7,
           "color_on": "#B39DDB",
-          "shape": 7
+          "link": 117
         },
         {
           "name": "CLIP",
           "type": "*",
-          "link": 116,
+          "shape": 7,
           "color_on": "#FFD500",
-          "shape": 7
+          "link": 116
         },
         {
           "name": "VAE",
           "type": "*",
-          "link": 111,
+          "shape": 7,
           "color_on": "#FF6E6E",
-          "shape": 7
+          "link": 111
         }
       ],
       "outputs": [],
       "title": "mcv",
       "properties": {
+        "cnr_id": "cg-use-everywhere",
+        "ver": "8017bc6b063f45db6b986d9fc8bb76bd3234b838",
         "Node name for S&R": "Anything Everywhere3",
         "group_restricted": 0,
         "color_restricted": 0
@@ -341,46 +349,48 @@
         120
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 118,
-          "dir": 3
+          "dir": 3,
+          "link": 118
         },
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 125,
-          "dir": 3
+          "dir": 3,
+          "link": 125
         }
       ],
       "outputs": [
         {
           "name": "MODEL",
           "type": "MODEL",
+          "dir": 4,
+          "shape": 3,
           "links": [
             117
           ],
-          "slot_index": 0,
-          "shape": 3,
-          "dir": 4
+          "slot_index": 0
         },
         {
           "name": "CLIP",
           "type": "CLIP",
+          "dir": 4,
+          "shape": 3,
           "links": [
             116
           ],
-          "slot_index": 1,
-          "shape": 3,
-          "dir": 4
+          "slot_index": 1
         }
       ],
       "title": "lora_stack",
       "properties": {
+        "cnr_id": "rgthree-comfy",
+        "ver": "32142fe476878a354dda6e2d4b5ea98960de3ced",
         "Show Strengths": "Separate Model & Clip"
       },
       "widgets_values": [
@@ -415,15 +425,17 @@
         {
           "name": "MODEL",
           "type": "MODEL",
+          "shape": 3,
           "links": [
             114
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
       "title": "gguf_model",
       "properties": {
+        "cnr_id": "ComfyUI-GGUF",
+        "ver": "bc5223b0e37e053dbec2ea5e5f52c2fd4b8f712a",
         "Node name for S&R": "UnetLoaderGGUFAdvanced"
       },
       "widgets_values": [
@@ -447,7 +459,7 @@
         130
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 4,
       "inputs": [
         {
@@ -468,6 +480,8 @@
       ],
       "title": "modelsampling_flux",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "ModelSamplingFlux"
       },
       "widgets_values": [
@@ -494,26 +508,28 @@
       "inputs": [
         {
           "name": "clip",
+          "label": "clip",
           "type": "CLIP",
-          "link": null,
-          "label": "clip"
+          "link": null
         }
       ],
       "outputs": [
         {
           "name": "CONDITIONING",
+          "label": "CONDITIONING",
           "type": "CONDITIONING",
+          "shape": 3,
           "links": [
             101,
             102
           ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "CONDITIONING"
+          "slot_index": 0
         }
       ],
       "title": "prompt_positive",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "CLIPTextEncodeFlux"
       },
       "widgets_values": [
@@ -536,7 +552,7 @@
         400
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -548,6 +564,8 @@
       "outputs": [],
       "title": "output",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
@@ -583,6 +601,8 @@
       ],
       "title": "vae_model",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "VAELoader"
       },
       "widgets_values": [
@@ -618,6 +638,8 @@
       ],
       "title": "gguf_dualclip_model",
       "properties": {
+        "cnr_id": "ComfyUI-GGUF",
+        "ver": "bc5223b0e37e053dbec2ea5e5f52c2fd4b8f712a",
         "Node name for S&R": "DualCLIPLoaderGGUF"
       },
       "widgets_values": [
@@ -629,24 +651,67 @@
       "bgcolor": "#335"
     },
     {
-      "id": 5,
-      "type": "KSampler",
+      "id": 69,
+      "type": "TeaCache",
       "pos": [
         850,
         230
       ],
       "size": [
         350,
-        270
+        110
       ],
       "flags": {},
-      "order": 15,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
           "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            139
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "teacache",
+      "properties": {
+        "cnr_id": "teacache",
+        "ver": "7d9fd8644c5de20b4c9c4f7f8e3cdf7f173ddb78",
+        "Node name for S&R": "TeaCache"
+      },
+      "widgets_values": [
+        "flux",
+        0.4,
+        3
+      ]
+    },
+    {
+      "id": 5,
+      "type": "KSampler",
+      "pos": [
+        850,
+        400
+      ],
+      "size": [
+        350,
+        474
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 139
         },
         {
           "name": "positive",
@@ -677,6 +742,8 @@
       ],
       "title": "ksampler",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
@@ -701,7 +768,7 @@
         100
       ],
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1147,6 +1214,38 @@
       5,
       0,
       "MODEL"
+    ],
+    [
+      139,
+      69,
+      0,
+      5,
+      0,
+      "MODEL"
+    ],
+    [
+      140,
+      8,
+      0,
+      7,
+      1,
+      "VAE"
+    ],
+    [
+      141,
+      66,
+      1,
+      53,
+      0,
+      "CLIP"
+    ],
+    [
+      142,
+      66,
+      0,
+      69,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
@@ -1180,13 +1279,43 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7247295000000009,
+      "scale": 0.6387446440677967,
       "offset": [
-        153.9496338532361,
-        -28.08405950922996
+        174.97428085502634,
+        -18.803795071126615
       ]
     },
-    "groupNodes": {}
+    "groupNodes": {},
+    "ue_links": [
+      {
+        "downstream": 7,
+        "downstream_slot": 1,
+        "upstream": "8",
+        "upstream_slot": 0,
+        "controller": 46,
+        "type": "VAE"
+      },
+      {
+        "downstream": 53,
+        "downstream_slot": 0,
+        "upstream": "66",
+        "upstream_slot": 1,
+        "controller": 46,
+        "type": "CLIP"
+      },
+      {
+        "downstream": 69,
+        "downstream_slot": 0,
+        "upstream": "66",
+        "upstream_slot": 0,
+        "controller": 46,
+        "type": "MODEL"
+      }
+    ],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
   },
   "version": 0.4
 }

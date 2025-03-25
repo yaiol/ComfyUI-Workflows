@@ -1,6 +1,6 @@
 {
-  "last_node_id": 88,
-  "last_link_id": 256,
+  "last_node_id": 90,
+  "last_link_id": 273,
   "nodes": [
     {
       "id": 43,
@@ -94,7 +94,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -122,6 +122,8 @@
       "outputs": [],
       "title": "ew mcv",
       "properties": {
+        "cnr_id": "cg-use-everywhere",
+        "ver": "8017bc6b063f45db6b986d9fc8bb76bd3234b838",
         "Node name for S&R": "Anything Everywhere3",
         "group_restricted": 0,
         "color_restricted": 0
@@ -155,159 +157,6 @@
       "shape": 1
     },
     {
-      "id": 55,
-      "type": "ModelSamplingFlux",
-      "pos": [
-        50,
-        370
-      ],
-      "size": [
-        350,
-        130
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 136
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "title": "modelsampling_flux",
-      "properties": {
-        "Node name for S&R": "ModelSamplingFlux"
-      },
-      "widgets_values": [
-        1.1500000000000001,
-        0.5,
-        1024,
-        1024
-      ]
-    },
-    {
-      "id": 59,
-      "type": "LoraLoader",
-      "pos": [
-        50,
-        550
-      ],
-      "size": [
-        350,
-        130
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 155
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 156
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "shape": 3,
-          "links": [
-            157
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "shape": 3,
-          "links": [
-            158
-          ],
-          "slot_index": 1
-        }
-      ],
-      "title": "turbo_model",
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "01 base\\fx10-alimama-turbo-alpha.sft",
-        1,
-        1
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 20,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        50,
-        230
-      ],
-      "size": [
-        350,
-        100
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "shape": 3,
-          "links": [
-            136,
-            155
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "shape": 3,
-          "links": [
-            156
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "shape": 3,
-          "links": [
-            110
-          ],
-          "slot_index": 2
-        }
-      ],
-      "title": "checkpoint_model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "fx10-comfy-dev-fp8.sft"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 57,
       "type": "ConditioningZeroOut",
       "pos": [
@@ -321,7 +170,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -342,6 +191,8 @@
       ],
       "title": "prompt_negative",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "ConditioningZeroOut"
       },
       "widgets_values": []
@@ -360,7 +211,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -381,6 +232,8 @@
       "outputs": [],
       "title": "ew prompts",
       "properties": {
+        "cnr_id": "cg-use-everywhere",
+        "ver": "8017bc6b063f45db6b986d9fc8bb76bd3234b838",
         "Node name for S&R": "Prompts Everywhere",
         "group_restricted": 0,
         "color_restricted": 0
@@ -428,6 +281,8 @@
       ],
       "title": "vae_decode",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "VAEDecode"
       },
       "widgets_values": []
@@ -444,7 +299,7 @@
         110
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -459,6 +314,8 @@
       ],
       "title": "latent_image",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "EmptyLatentImage"
       },
       "widgets_values": [
@@ -481,7 +338,7 @@
         270
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -504,6 +361,8 @@
       ],
       "title": "prompt_positive",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
@@ -513,18 +372,280 @@
       "bgcolor": "#353"
     },
     {
+      "id": 45,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        1250,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖9 ouput",
+      "properties": {},
+      "widgets_values": [
+        "9",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 27,
+      "type": "SaveImage",
+      "pos": [
+        1250,
+        280
+      ],
+      "size": [
+        350,
+        400
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 102
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%seed.seed%-0_%date:yyMMdd-hhmmss%_T2I-BAS_FX10_TRB"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 49,
+      "type": "PerturbedAttentionGuidance",
+      "pos": [
+        850,
+        230
+      ],
+      "size": [
+        350,
+        60
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "shape": 3,
+          "links": [
+            262
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "pag",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "PerturbedAttentionGuidance"
+      },
+      "widgets_values": [
+        3
+      ]
+    },
+    {
+      "id": 55,
+      "type": "ModelSamplingFlux",
+      "pos": [
+        50,
+        390
+      ],
+      "size": [
+        350,
+        130
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 263
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            260
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "modelsampling_flux",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "ModelSamplingFlux"
+      },
+      "widgets_values": [
+        1.1500000000000001,
+        0.5,
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": 20,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        100
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "shape": 3,
+          "links": [
+            263
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "shape": 3,
+          "links": [
+            156
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "shape": 3,
+          "links": [
+            110
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "checkpoint_model",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "fx10-comfy-dev-fp8.sft"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 59,
+      "type": "LoraLoader",
+      "pos": [
+        50,
+        590
+      ],
+      "size": [
+        350,
+        130
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 260
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 156
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "shape": 3,
+          "links": [
+            157
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "shape": 3,
+          "links": [
+            158
+          ],
+          "slot_index": 1
+        }
+      ],
+      "title": "turbo_model",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "01 base\\fx10-alimama-turbo-alpha.sft",
+        1,
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 58,
       "type": "Power Lora Loader (rgthree)",
       "pos": [
         50,
-        740
+        790
       ],
       "size": [
         350,
         166
       ],
       "flags": {},
-      "order": 14,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -564,6 +685,8 @@
       ],
       "title": "lora_stack",
       "properties": {
+        "cnr_id": "rgthree-comfy",
+        "ver": "32142fe476878a354dda6e2d4b5ea98960de3ced",
         "Show Strengths": "Separate Model & Clip"
       },
       "widgets_values": [
@@ -578,122 +701,67 @@
       "bgcolor": "#335"
     },
     {
-      "id": 49,
-      "type": "PerturbedAttentionGuidance",
-      "pos": [
-        850,
-        230
-      ],
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "shape": 3,
-          "links": [
-            97
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "pag",
-      "properties": {
-        "Node name for S&R": "PerturbedAttentionGuidance"
-      },
-      "widgets_values": [
-        3
-      ]
-    },
-    {
-      "id": 45,
-      "type": "Bookmark (rgthree)",
-      "pos": [
-        1250,
-        170
-      ],
-      "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖9 ouput",
-      "properties": {},
-      "widgets_values": [
-        "9",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 27,
-      "type": "SaveImage",
-      "pos": [
-        1250,
-        280
-      ],
-      "size": [
-        350,
-        400
-      ],
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 102
-        }
-      ],
-      "outputs": [],
-      "title": "output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%seed.seed%-0_%date:yyMMdd-hhmmss%_T2I-BAS_FX10_TRB"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 33,
-      "type": "KSampler",
+      "id": 90,
+      "type": "TeaCache",
       "pos": [
         850,
         350
       ],
       "size": [
         350,
-        474
+        110
       ],
       "flags": {},
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 97
+          "link": 262
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            261
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "teacache",
+      "properties": {
+        "cnr_id": "teacache",
+        "ver": "7d9fd8644c5de20b4c9c4f7f8e3cdf7f173ddb78",
+        "Node name for S&R": "TeaCache"
+      },
+      "widgets_values": [
+        "flux",
+        0.4,
+        3
+      ]
+    },
+    {
+      "id": 33,
+      "type": "KSampler",
+      "pos": [
+        850,
+        520
+      ],
+      "size": [
+        350,
+        474
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 261
         },
         {
           "name": "positive",
@@ -725,6 +793,8 @@
       ],
       "title": "ksampler",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
@@ -764,14 +834,6 @@
     }
   ],
   "links": [
-    [
-      97,
-      49,
-      0,
-      33,
-      0,
-      "MODEL"
-    ],
     [
       101,
       33,
@@ -997,14 +1059,6 @@
       "LATENT"
     ],
     [
-      136,
-      20,
-      0,
-      55,
-      0,
-      "MODEL"
-    ],
-    [
       138,
       6,
       0,
@@ -1097,14 +1151,6 @@
       58,
       0,
       33,
-      0,
-      "MODEL"
-    ],
-    [
-      155,
-      20,
-      0,
-      59,
       0,
       "MODEL"
     ],
@@ -1555,6 +1601,118 @@
       33,
       2,
       "CONDITIONING"
+    ],
+    [
+      260,
+      55,
+      0,
+      59,
+      0,
+      "MODEL"
+    ],
+    [
+      261,
+      90,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      262,
+      49,
+      0,
+      90,
+      0,
+      "MODEL"
+    ],
+    [
+      263,
+      20,
+      0,
+      55,
+      0,
+      "MODEL"
+    ],
+    [
+      264,
+      20,
+      2,
+      51,
+      1,
+      "VAE"
+    ],
+    [
+      265,
+      58,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      266,
+      58,
+      0,
+      90,
+      0,
+      "MODEL"
+    ],
+    [
+      267,
+      6,
+      0,
+      33,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      268,
+      57,
+      0,
+      33,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      269,
+      20,
+      2,
+      51,
+      1,
+      "VAE"
+    ],
+    [
+      270,
+      58,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      271,
+      58,
+      0,
+      90,
+      0,
+      "MODEL"
+    ],
+    [
+      272,
+      6,
+      0,
+      33,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      273,
+      57,
+      0,
+      33,
+      2,
+      "CONDITIONING"
     ]
   ],
   "groups": [
@@ -1588,10 +1746,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4784386617100371,
+      "scale": 0.4422680412371134,
       "offset": [
-        733.3372183372185,
-        339.33333333333337
+        859.1491841491843,
+        354
       ]
     },
     "ue_links": [
@@ -1612,7 +1770,7 @@
         "type": "CLIP"
       },
       {
-        "downstream": 33,
+        "downstream": 90,
         "downstream_slot": 0,
         "upstream": "58",
         "upstream_slot": 0,

@@ -1,6 +1,6 @@
 {
-  "last_node_id": 256,
-  "last_link_id": 980,
+  "last_node_id": 257,
+  "last_link_id": 989,
   "nodes": [
     {
       "id": 234,
@@ -95,6 +95,8 @@
       ],
       "title": "outpainting_pad",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "ImagePadForOutpaint"
       },
       "widgets_values": [
@@ -145,33 +147,35 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
           "name": "IMAGE",
           "type": "*",
-          "link": 956,
           "shape": 7,
-          "color_on": "#64B5F6"
+          "color_on": "#64B5F6",
+          "link": 956
         },
         {
           "name": "MASK",
           "type": "*",
-          "link": 957,
           "shape": 7,
-          "color_on": "#81C784"
+          "color_on": "#81C784",
+          "link": 957
         },
         {
           "name": "anything",
           "type": "*",
-          "link": null,
-          "shape": 7
+          "shape": 7,
+          "link": null
         }
       ],
       "outputs": [],
       "title": "im",
       "properties": {
+        "cnr_id": "cg-use-everywhere",
+        "ver": "8017bc6b063f45db6b986d9fc8bb76bd3234b838",
         "Node name for S&R": "Anything Everywhere3",
         "group_restricted": 0,
         "color_restricted": 0
@@ -205,6 +209,8 @@
       ],
       "title": "vae",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "VAELoader"
       },
       "widgets_values": [
@@ -234,15 +240,17 @@
         {
           "name": "MODEL",
           "type": "MODEL",
+          "shape": 3,
           "links": [
             954
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
       "title": "gguf",
       "properties": {
+        "cnr_id": "ComfyUI-GGUF",
+        "ver": "bc5223b0e37e053dbec2ea5e5f52c2fd4b8f712a",
         "Node name for S&R": "UnetLoaderGGUFAdvanced"
       },
       "widgets_values": [
@@ -281,6 +289,8 @@
       ],
       "title": "gguf_dualclip",
       "properties": {
+        "cnr_id": "ComfyUI-GGUF",
+        "ver": "bc5223b0e37e053dbec2ea5e5f52c2fd4b8f712a",
         "Node name for S&R": "DualCLIPLoaderGGUF"
       },
       "widgets_values": [
@@ -326,6 +336,8 @@
       ],
       "title": "prompt_negative",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
@@ -367,6 +379,8 @@
       ],
       "title": "prompt_positive",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
@@ -376,48 +390,317 @@
       "bgcolor": "#353"
     },
     {
-      "id": 251,
-      "type": "DifferentialDiffusion",
+      "id": 236,
+      "type": "Bookmark (rgthree)",
       "pos": [
-        860,
-        230
+        450,
+        170
       ],
       "size": [
-        340,
-        30
+        210,
+        62
       ],
-      "flags": {},
+      "flags": {
+        "collapsed": true
+      },
       "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖3 prompt",
+      "properties": {},
+      "widgets_values": [
+        "3",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 255,
+      "type": "Anything Everywhere3",
+      "pos": [
+        450,
+        130
+      ],
+      "size": [
+        252,
+        66
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
-          "name": "model",
-          "type": "MODEL",
+          "name": "VAE",
+          "type": "*",
+          "shape": 7,
+          "color_on": "#FF6E6E",
+          "link": 953
+        },
+        {
+          "name": "MODEL",
+          "type": "*",
+          "shape": 7,
+          "color_on": "#B39DDB",
+          "link": 954
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "shape": 7,
+          "color_on": "#FFD500",
+          "link": 955
+        }
+      ],
+      "outputs": [],
+      "title": "vmc",
+      "properties": {
+        "cnr_id": "cg-use-everywhere",
+        "ver": "8017bc6b063f45db6b986d9fc8bb76bd3234b838",
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 237,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        860,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖4 controlnet",
+      "properties": {},
+      "widgets_values": [
+        "4",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 238,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        1250,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖5 sampler",
+      "properties": {},
+      "widgets_values": [
+        "5",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 239,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        1650,
+        160
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖9 output",
+      "properties": {},
+      "widgets_values": [
+        "9",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 244,
+      "type": "VAEDecode",
+      "pos": [
+        1650,
+        230
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 947
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
           "link": null
         }
       ],
       "outputs": [
         {
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            943
+            959
           ],
           "slot_index": 0
         }
       ],
-      "title": "differential_diffusion",
+      "title": "vae_decode",
       "properties": {
-        "Node name for S&R": "DifferentialDiffusion"
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "VAEDecode"
       },
       "widgets_values": []
+    },
+    {
+      "id": 241,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        1650,
+        750
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖note",
+      "properties": {},
+      "widgets_values": [
+        ".",
+        2
+      ],
+      "shape": 1
+    },
+    {
+      "id": 4,
+      "type": "LoadImage",
+      "pos": [
+        -350,
+        230
+      ],
+      "size": [
+        350,
+        440
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "shape": 3,
+          "links": [
+            958
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "shape": 3,
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "title": "input",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "animal-heron.jpg",
+        "image"
+      ],
+      "color": "#ffa014",
+      "bgcolor": "#ff8c00"
+    },
+    {
+      "id": 226,
+      "type": "SaveImage",
+      "pos": [
+        1650,
+        290
+      ],
+      "size": [
+        350,
+        400
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 959
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_OUP-FL_FX10_GGUF_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 248,
       "type": "FluxGuidance",
       "pos": [
         860,
-        330
+        320
       ],
       "size": [
         340,
@@ -437,15 +720,17 @@
         {
           "name": "CONDITIONING",
           "type": "CONDITIONING",
+          "shape": 3,
           "links": [
             950
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
       "title": "flux_guidance",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "FluxGuidance"
       },
       "widgets_values": [
@@ -464,7 +749,7 @@
         140
       ],
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -521,6 +806,8 @@
       ],
       "title": "inpaint_conditionning",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "InpaintModelConditioning"
       },
       "widgets_values": [
@@ -528,290 +815,106 @@
       ]
     },
     {
-      "id": 236,
-      "type": "Bookmark (rgthree)",
-      "pos": [
-        450,
-        170
-      ],
-      "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖3 prompt",
-      "properties": {},
-      "widgets_values": [
-        "3",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 255,
-      "type": "Anything Everywhere3",
-      "pos": [
-        450,
-        130
-      ],
-      "size": [
-        252,
-        66
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 953,
-          "shape": 7,
-          "color_on": "#FF6E6E"
-        },
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 954,
-          "shape": 7,
-          "color_on": "#B39DDB"
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 955,
-          "shape": 7,
-          "color_on": "#FFD500"
-        }
-      ],
-      "outputs": [],
-      "title": "vmc",
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 237,
-      "type": "Bookmark (rgthree)",
+      "id": 251,
+      "type": "DifferentialDiffusion",
       "pos": [
         860,
-        170
-      ],
-      "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖4 controlnet",
-      "properties": {},
-      "widgets_values": [
-        "4",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 238,
-      "type": "Bookmark (rgthree)",
-      "pos": [
-        1250,
-        170
-      ],
-      "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖5 sampler",
-      "properties": {},
-      "widgets_values": [
-        "5",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 239,
-      "type": "Bookmark (rgthree)",
-      "pos": [
-        1650,
-        160
-      ],
-      "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 12,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖9 output",
-      "properties": {},
-      "widgets_values": [
-        "9",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 244,
-      "type": "VAEDecode",
-      "pos": [
-        1650,
         230
       ],
       "size": [
-        210,
-        46
+        340,
+        30
       ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 22,
+      "flags": {},
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 947
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
+          "name": "model",
+          "type": "MODEL",
           "link": null
         }
       ],
       "outputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "name": "MODEL",
+          "type": "MODEL",
           "links": [
-            959
+            981
           ],
           "slot_index": 0
         }
       ],
-      "title": "vae_decode",
+      "title": "differential_diffusion",
       "properties": {
-        "Node name for S&R": "VAEDecode"
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "DifferentialDiffusion"
       },
       "widgets_values": []
     },
     {
-      "id": 241,
-      "type": "Bookmark (rgthree)",
+      "id": 257,
+      "type": "TeaCache",
       "pos": [
-        1650,
-        750
-      ],
-      "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 13,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖note",
-      "properties": {},
-      "widgets_values": [
-        ".",
-        2
-      ],
-      "shape": 1
-    },
-    {
-      "id": 4,
-      "type": "LoadImage",
-      "pos": [
-        -350,
+        1250,
         230
       ],
       "size": [
         350,
-        440
+        110
       ],
       "flags": {},
-      "order": 14,
+      "order": 19,
       "mode": 0,
-      "inputs": [],
-      "outputs": [
+      "inputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            958
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [],
-          "slot_index": 1,
-          "shape": 3
+          "name": "model",
+          "type": "MODEL",
+          "link": 981
         }
       ],
-      "title": "input",
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            982
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "teacache",
       "properties": {
-        "Node name for S&R": "LoadImage"
+        "cnr_id": "teacache",
+        "ver": "7d9fd8644c5de20b4c9c4f7f8e3cdf7f173ddb78",
+        "Node name for S&R": "TeaCache"
       },
       "widgets_values": [
-        "animal-heron.jpg",
-        "image"
-      ],
-      "color": "#ffa014",
-      "bgcolor": "#ff8c00"
+        "flux",
+        0.4,
+        3
+      ]
     },
     {
       "id": 242,
       "type": "KSampler",
       "pos": [
         1250,
-        230
+        400
       ],
       "size": [
         350,
-        262
+        474
       ],
       "flags": {},
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 943
+          "link": 982
         },
         {
           "name": "positive",
@@ -841,10 +944,12 @@
       ],
       "title": "ksampler",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        1075610083389689,
+        25191512,
         "randomize",
         20,
         1,
@@ -852,38 +957,6 @@
         "normal",
         1
       ]
-    },
-    {
-      "id": 226,
-      "type": "SaveImage",
-      "pos": [
-        1650,
-        290
-      ],
-      "size": [
-        350,
-        400
-      ],
-      "flags": {},
-      "order": 23,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 959
-        }
-      ],
-      "outputs": [],
-      "title": "output",
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_OUP-FL_FX10_GGUF_%ksampler.seed%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 227,
@@ -1103,14 +1176,6 @@
       230,
       2,
       "MASK"
-    ],
-    [
-      943,
-      251,
-      0,
-      242,
-      0,
-      "MODEL"
     ],
     [
       944,
@@ -1391,6 +1456,78 @@
       244,
       1,
       "VAE"
+    ],
+    [
+      981,
+      251,
+      0,
+      257,
+      0,
+      "MODEL"
+    ],
+    [
+      982,
+      257,
+      0,
+      242,
+      0,
+      "MODEL"
+    ],
+    [
+      983,
+      254,
+      0,
+      243,
+      0,
+      "CLIP"
+    ],
+    [
+      984,
+      254,
+      0,
+      247,
+      0,
+      "CLIP"
+    ],
+    [
+      985,
+      249,
+      0,
+      244,
+      1,
+      "VAE"
+    ],
+    [
+      986,
+      249,
+      0,
+      250,
+      2,
+      "VAE"
+    ],
+    [
+      987,
+      252,
+      0,
+      250,
+      3,
+      "IMAGE"
+    ],
+    [
+      988,
+      252,
+      1,
+      250,
+      4,
+      "MASK"
+    ],
+    [
+      989,
+      253,
+      0,
+      251,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
@@ -1398,8 +1535,8 @@
       "id": 1,
       "title": " FX10 GGUF",
       "bounding": [
-        -71.3097152709961,
-        -58.30063247680664,
+        -70,
+        -60,
         190,
         40
       ],
@@ -1424,12 +1561,74 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.2839025177495011,
+      "scale": 0.7047910377125239,
       "offset": [
-        -1075.573374914879,
-        -419.77022204119373
+        -366.0151649385219,
+        -145.8267456533447
       ]
-    }
+    },
+    "ue_links": [
+      {
+        "downstream": 243,
+        "downstream_slot": 0,
+        "upstream": "254",
+        "upstream_slot": 0,
+        "controller": 255,
+        "type": "CLIP"
+      },
+      {
+        "downstream": 247,
+        "downstream_slot": 0,
+        "upstream": "254",
+        "upstream_slot": 0,
+        "controller": 255,
+        "type": "CLIP"
+      },
+      {
+        "downstream": 244,
+        "downstream_slot": 1,
+        "upstream": "249",
+        "upstream_slot": 0,
+        "controller": 255,
+        "type": "VAE"
+      },
+      {
+        "downstream": 250,
+        "downstream_slot": 2,
+        "upstream": "249",
+        "upstream_slot": 0,
+        "controller": 255,
+        "type": "VAE"
+      },
+      {
+        "downstream": 250,
+        "downstream_slot": 3,
+        "upstream": "252",
+        "upstream_slot": 0,
+        "controller": 256,
+        "type": "IMAGE"
+      },
+      {
+        "downstream": 250,
+        "downstream_slot": 4,
+        "upstream": "252",
+        "upstream_slot": 1,
+        "controller": 256,
+        "type": "MASK"
+      },
+      {
+        "downstream": 251,
+        "downstream_slot": 0,
+        "upstream": "253",
+        "upstream_slot": 0,
+        "controller": 255,
+        "type": "MODEL"
+      }
+    ],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
   },
   "version": 0.4
 }

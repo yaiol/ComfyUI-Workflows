@@ -1,6 +1,6 @@
 {
-  "last_node_id": 91,
-  "last_link_id": 266,
+  "last_node_id": 92,
+  "last_link_id": 279,
   "nodes": [
     {
       "id": 43,
@@ -137,6 +137,8 @@
       ],
       "title": "modelsampling_flux",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "ModelSamplingFlux"
       },
       "widgets_values": [
@@ -194,6 +196,8 @@
       ],
       "title": "turbo_model",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "LoraLoader"
       },
       "widgets_values": [
@@ -251,6 +255,8 @@
       ],
       "title": "checkpoint_model",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
@@ -311,6 +317,8 @@
       ],
       "title": "lora_stack",
       "properties": {
+        "cnr_id": "rgthree-comfy",
+        "ver": "32142fe476878a354dda6e2d4b5ea98960de3ced",
         "Show Strengths": "Separate Model & Clip"
       },
       "widgets_values": [
@@ -338,7 +346,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -359,6 +367,8 @@
       ],
       "title": "prompt_negative",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "ConditioningZeroOut"
       },
       "widgets_values": []
@@ -377,7 +387,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -398,54 +408,13 @@
       "outputs": [],
       "title": "ew prompts",
       "properties": {
+        "cnr_id": "cg-use-everywhere",
+        "ver": "8017bc6b063f45db6b986d9fc8bb76bd3234b838",
         "Node name for S&R": "Prompts Everywhere",
         "group_restricted": 0,
         "color_restricted": 0
       },
       "widgets_values": []
-    },
-    {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": [
-        450,
-        230
-      ],
-      "size": [
-        350,
-        270
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            138,
-            185
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "prompt_positive",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "cinematic photograph of an astronaut riding a horse in space"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 5,
@@ -459,7 +428,7 @@
         110
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -474,6 +443,8 @@
       ],
       "title": "latent_image",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "EmptyLatentImage"
       },
       "widgets_values": [
@@ -498,7 +469,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -526,6 +497,8 @@
       ],
       "title": "vae_decode",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "VAEDecode"
       },
       "widgets_values": []
@@ -542,7 +515,7 @@
         60
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -557,6 +530,8 @@
       ],
       "title": "upscale_model",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "UpscaleModelLoader"
       },
       "widgets_values": [
@@ -575,7 +550,7 @@
         26
       ],
       "flags": {},
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -613,7 +588,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -639,7 +614,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -650,116 +625,6 @@
         0.8
       ],
       "shape": 1
-    },
-    {
-      "id": 33,
-      "type": "KSampler",
-      "pos": [
-        850,
-        500
-      ],
-      "size": [
-        350,
-        474
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 97
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": null
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": null
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 135,
-          "slot_index": 3
-        },
-        {
-          "name": "seed",
-          "type": "INT",
-          "widget": {
-            "name": "seed"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "shape": 3,
-          "links": [
-            101
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "ksampler",
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        25192216,
-        "increment",
-        12,
-        1,
-        "euler",
-        "simple",
-        1
-      ]
-    },
-    {
-      "id": 49,
-      "type": "PerturbedAttentionGuidance",
-      "pos": [
-        850,
-        380
-      ],
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "shape": 3,
-          "links": [
-            97
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "pag",
-      "properties": {
-        "Node name for S&R": "PerturbedAttentionGuidance"
-      },
-      "widgets_values": [
-        3
-      ]
     },
     {
       "id": 77,
@@ -789,6 +654,8 @@
       "outputs": [],
       "title": "ew seed",
       "properties": {
+        "cnr_id": "cg-use-everywhere",
+        "ver": "8017bc6b063f45db6b986d9fc8bb76bd3234b838",
         "Node name for S&R": "Anything Everywhere",
         "group_restricted": 0,
         "color_restricted": 0
@@ -837,6 +704,8 @@
       "outputs": [],
       "title": "ew vmc",
       "properties": {
+        "cnr_id": "cg-use-everywhere",
+        "ver": "8017bc6b063f45db6b986d9fc8bb76bd3234b838",
         "Node name for S&R": "Anything Everywhere3",
         "group_restricted": 0,
         "color_restricted": 0
@@ -855,7 +724,7 @@
         400
       ],
       "flags": {},
-      "order": 25,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -867,6 +736,8 @@
       "outputs": [],
       "title": "output",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
@@ -887,7 +758,7 @@
         400
       ],
       "flags": {},
-      "order": 24,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -899,6 +770,8 @@
       "outputs": [],
       "title": "output",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
@@ -919,7 +792,7 @@
         830
       ],
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -973,11 +846,13 @@
       ],
       "title": "upscale",
       "properties": {
+        "cnr_id": "comfyui_ultimatesdupscale",
+        "ver": "778a475dde8116a2066fe07f6c9ca15554e0b5be",
         "Node name for S&R": "UltimateSDUpscale"
       },
       "widgets_values": [
         2,
-        277301936746251,
+        859475590100316,
         "randomize",
         4,
         1,
@@ -997,6 +872,208 @@
         true,
         false
       ]
+    },
+    {
+      "id": 49,
+      "type": "PerturbedAttentionGuidance",
+      "pos": [
+        850,
+        380
+      ],
+      "size": [
+        350,
+        60
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "shape": 3,
+          "links": [
+            267
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "pag",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "PerturbedAttentionGuidance"
+      },
+      "widgets_values": [
+        3
+      ]
+    },
+    {
+      "id": 92,
+      "type": "TeaCache",
+      "pos": [
+        850,
+        500
+      ],
+      "size": [
+        350,
+        110
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 267
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            268
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "teacache",
+      "properties": {
+        "cnr_id": "teacache",
+        "ver": "7d9fd8644c5de20b4c9c4f7f8e3cdf7f173ddb78",
+        "Node name for S&R": "TeaCache"
+      },
+      "widgets_values": [
+        "flux",
+        0.4,
+        3
+      ]
+    },
+    {
+      "id": 33,
+      "type": "KSampler",
+      "pos": [
+        850,
+        670
+      ],
+      "size": [
+        350,
+        474
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 268
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 135,
+          "slot_index": 3
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "shape": 3,
+          "links": [
+            101
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "ksampler",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        25192217,
+        "increment",
+        12,
+        1,
+        "euler",
+        "simple",
+        1
+      ]
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        450,
+        230
+      ],
+      "size": [
+        350,
+        270
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            138,
+            185
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "prompt_positive",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "cinematic photograph of an astronaut riding a horse in space"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 76,
@@ -1027,6 +1104,8 @@
       ],
       "title": "seed",
       "properties": {
+        "cnr_id": "cg-use-everywhere",
+        "ver": "8017bc6b063f45db6b986d9fc8bb76bd3234b838",
         "Node name for S&R": "Seed Everywhere",
         "group_restricted": 0,
         "color_restricted": 0
@@ -1063,14 +1142,6 @@
     }
   ],
   "links": [
-    [
-      97,
-      49,
-      0,
-      33,
-      0,
-      "MODEL"
-    ],
     [
       101,
       33,
@@ -1934,6 +2005,110 @@
       73,
       6,
       "INT"
+    ],
+    [
+      267,
+      49,
+      0,
+      92,
+      0,
+      "MODEL"
+    ],
+    [
+      268,
+      92,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      269,
+      20,
+      2,
+      51,
+      1,
+      "VAE"
+    ],
+    [
+      270,
+      58,
+      0,
+      73,
+      1,
+      "MODEL"
+    ],
+    [
+      271,
+      6,
+      0,
+      73,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      272,
+      57,
+      0,
+      73,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      273,
+      20,
+      2,
+      73,
+      4,
+      "VAE"
+    ],
+    [
+      274,
+      76,
+      0,
+      73,
+      6,
+      "INT"
+    ],
+    [
+      275,
+      58,
+      0,
+      92,
+      0,
+      "MODEL"
+    ],
+    [
+      276,
+      6,
+      0,
+      33,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      277,
+      57,
+      0,
+      33,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      278,
+      76,
+      0,
+      33,
+      4,
+      "INT"
+    ],
+    [
+      279,
+      58,
+      1,
+      6,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [
@@ -1967,21 +2142,13 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.36253521126760563,
+      "scale": 0.9765659463610639,
       "offset": [
-        1025.1476301476303,
-        396.66666666666663
+        -831.4636156985466,
+        -696.9898833170253
       ]
     },
     "ue_links": [
-      {
-        "downstream": 6,
-        "downstream_slot": 0,
-        "upstream": "58",
-        "upstream_slot": 1,
-        "controller": 53,
-        "type": "CLIP"
-      },
       {
         "downstream": 51,
         "downstream_slot": 1,
@@ -1989,38 +2156,6 @@
         "upstream_slot": 2,
         "controller": 53,
         "type": "VAE"
-      },
-      {
-        "downstream": 33,
-        "downstream_slot": 0,
-        "upstream": "58",
-        "upstream_slot": 0,
-        "controller": 53,
-        "type": "MODEL"
-      },
-      {
-        "downstream": 33,
-        "downstream_slot": 1,
-        "upstream": "6",
-        "upstream_slot": 0,
-        "controller": 75,
-        "type": "CONDITIONING"
-      },
-      {
-        "downstream": 33,
-        "downstream_slot": 2,
-        "upstream": "57",
-        "upstream_slot": 0,
-        "controller": 75,
-        "type": "CONDITIONING"
-      },
-      {
-        "downstream": 33,
-        "downstream_slot": 4,
-        "upstream": "76",
-        "upstream_slot": 0,
-        "controller": 76,
-        "type": "INT"
       },
       {
         "downstream": 73,
@@ -2061,6 +2196,46 @@
         "upstream_slot": 0,
         "controller": 76,
         "type": "INT"
+      },
+      {
+        "downstream": 92,
+        "downstream_slot": 0,
+        "upstream": "58",
+        "upstream_slot": 0,
+        "controller": 53,
+        "type": "MODEL"
+      },
+      {
+        "downstream": 33,
+        "downstream_slot": 1,
+        "upstream": "6",
+        "upstream_slot": 0,
+        "controller": 75,
+        "type": "CONDITIONING"
+      },
+      {
+        "downstream": 33,
+        "downstream_slot": 2,
+        "upstream": "57",
+        "upstream_slot": 0,
+        "controller": 75,
+        "type": "CONDITIONING"
+      },
+      {
+        "downstream": 33,
+        "downstream_slot": 4,
+        "upstream": "76",
+        "upstream_slot": 0,
+        "controller": 76,
+        "type": "INT"
+      },
+      {
+        "downstream": 6,
+        "downstream_slot": 0,
+        "upstream": "58",
+        "upstream_slot": 1,
+        "controller": 53,
+        "type": "CLIP"
       }
     ],
     "VHS_latentpreview": false,
