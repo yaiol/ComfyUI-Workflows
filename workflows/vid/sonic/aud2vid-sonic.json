@@ -1,0 +1,785 @@
+{
+  "id": "eb1b14df-300a-4bab-9f9a-76bf8f266bf9",
+  "revision": 0,
+  "last_node_id": 38,
+  "last_link_id": 41,
+  "nodes": [
+    {
+      "id": 26,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        -250,
+        -130
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.5
+      ],
+      "shape": 1
+    },
+    {
+      "id": 36,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        -250,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖1 input",
+      "properties": {},
+      "widgets_values": [
+        "1",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 25,
+      "type": "LoadAudio",
+      "pos": [
+        -250,
+        230
+      ],
+      "size": [
+        350,
+        140
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            33
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "English_USA_M_Adult_Steffan.mp3",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 29,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        160,
+        160
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖2 checkpoint",
+      "properties": {},
+      "widgets_values": [
+        "2",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 37,
+      "type": "Anything Everywhere3",
+      "pos": [
+        160,
+        110
+      ],
+      "size": [
+        252,
+        66
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_on": "",
+          "label": "AUDIO",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 33
+        },
+        {
+          "color_on": "#64B5F6",
+          "label": "IMAGE",
+          "name": "anything2",
+          "shape": 7,
+          "type": "*",
+          "link": 34
+        },
+        {
+          "label": "anything",
+          "name": "anything3",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "title": "ew ai",
+      "properties": {
+        "cnr_id": "cg-use-everywhere",
+        "ver": "437b2c60e3f02e5c3ab20d88d823f94ab94fb2e0",
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 24,
+      "type": "unCLIPCheckpointLoader",
+      "pos": [
+        160,
+        230
+      ],
+      "size": [
+        340,
+        120
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            26
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": null
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            29
+          ]
+        },
+        {
+          "name": "CLIP_VISION",
+          "type": "CLIP_VISION",
+          "links": [
+            27
+          ]
+        }
+      ],
+      "title": "unclip_checkpoint_model",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "unCLIPCheckpointLoader"
+      },
+      "widgets_values": [
+        "svd_xt_1_1.safetensors"
+      ]
+    },
+    {
+      "id": 27,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        550,
+        160
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖3 prompt",
+      "properties": {},
+      "widgets_values": [
+        "3",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 30,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        1350,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖9 ouput",
+      "properties": {},
+      "widgets_values": [
+        "9",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 21,
+      "type": "SONICTLoader",
+      "pos": [
+        550,
+        230
+      ],
+      "size": [
+        350,
+        150
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL_SONIC",
+          "links": [
+            22
+          ]
+        },
+        {
+          "name": "dtype",
+          "type": "DTYPE",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "title": "sonic_model",
+      "properties": {
+        "cnr_id": "ComfyUI_Sonic",
+        "ver": "6595df02e72406fe23baebc12ac2088832d7ff9b",
+        "Node name for S&R": "SONICTLoader"
+      },
+      "widgets_values": [
+        "unet.pth",
+        1,
+        true,
+        "fp16"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "SONIC_PreData",
+      "pos": [
+        560,
+        440
+      ],
+      "size": [
+        340,
+        190
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip_vision",
+          "type": "CLIP_VISION",
+          "link": 27
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 29
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "weight_dtype",
+          "type": "DTYPE",
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "data_dict",
+          "type": "SONIC_PREDATA",
+          "links": [
+            20
+          ]
+        }
+      ],
+      "title": "sonic_predata",
+      "properties": {
+        "cnr_id": "ComfyUI_Sonic",
+        "ver": "6595df02e72406fe23baebc12ac2088832d7ff9b",
+        "Node name for S&R": "SONIC_PreData"
+      },
+      "widgets_values": [
+        384,
+        28,
+        0.5
+      ]
+    },
+    {
+      "id": 22,
+      "type": "LoadImage",
+      "pos": [
+        -250,
+        430
+      ],
+      "size": [
+        350,
+        440
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            34
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "character-man-einstein.jpg",
+        "image",
+        ""
+      ]
+    },
+    {
+      "id": 19,
+      "type": "SONICSampler",
+      "pos": [
+        950,
+        230
+      ],
+      "size": [
+        350,
+        174
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL_SONIC",
+          "link": 22
+        },
+        {
+          "name": "data_dict",
+          "type": "SONIC_PREDATA",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            21
+          ]
+        },
+        {
+          "name": "fps",
+          "type": "FLOAT",
+          "links": null
+        }
+      ],
+      "title": "sonic_sampler",
+      "properties": {
+        "cnr_id": "ComfyUI_Sonic",
+        "ver": "6595df02e72406fe23baebc12ac2088832d7ff9b",
+        "Node name for S&R": "SONICSampler"
+      },
+      "widgets_values": [
+        25191512,
+        "fixed",
+        25,
+        1,
+        25
+      ]
+    },
+    {
+      "id": 20,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        1350,
+        230
+      ],
+      "size": [
+        350,
+        678
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 21
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "df55f01d1df2f7bf5cc772294bc2e6d8bab22d66",
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 25,
+        "loop_count": 0,
+        "filename_prefix": "%date:yyMMdd%/%date:yyMMdd-hhmmss%_A2V_SONIC_%sonic_sampler.seed%",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "AnimateDiff_00003-audio.mp4",
+            "subfolder": "",
+            "type": "output",
+            "format": "video/h264-mp4",
+            "frame_rate": 25,
+            "workflow": "AnimateDiff_00003.png",
+            "fullpath": "I:\\apps\\bin\\sd-comfyui\\main\\output\\AnimateDiff_00003-audio.mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 38,
+      "type": "Note",
+      "pos": [
+        1350,
+        970
+      ],
+      "size": [
+        350,
+        100
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "aud2vid-sonic\n==========================================================\nSONIC: Sonic\nID   : A2V_SONIC"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      20,
+      18,
+      0,
+      19,
+      1,
+      "SONIC_PREDATA"
+    ],
+    [
+      21,
+      19,
+      0,
+      20,
+      0,
+      "IMAGE"
+    ],
+    [
+      22,
+      21,
+      0,
+      19,
+      0,
+      "MODEL_SONIC"
+    ],
+    [
+      23,
+      21,
+      1,
+      18,
+      4,
+      "DTYPE"
+    ],
+    [
+      26,
+      24,
+      0,
+      21,
+      0,
+      "MODEL"
+    ],
+    [
+      27,
+      24,
+      3,
+      18,
+      0,
+      "CLIP_VISION"
+    ],
+    [
+      29,
+      24,
+      2,
+      18,
+      1,
+      "VAE"
+    ],
+    [
+      33,
+      25,
+      0,
+      37,
+      0,
+      "AUDIO"
+    ],
+    [
+      34,
+      22,
+      0,
+      37,
+      1,
+      "IMAGE"
+    ],
+    [
+      35,
+      25,
+      0,
+      17,
+      1,
+      "AUDIO"
+    ],
+    [
+      36,
+      25,
+      0,
+      18,
+      2,
+      "AUDIO"
+    ],
+    [
+      37,
+      22,
+      0,
+      18,
+      3,
+      "IMAGE"
+    ],
+    [
+      38,
+      25,
+      0,
+      20,
+      1,
+      "AUDIO"
+    ],
+    [
+      39,
+      25,
+      0,
+      18,
+      2,
+      "AUDIO"
+    ],
+    [
+      40,
+      22,
+      0,
+      18,
+      3,
+      "IMAGE"
+    ],
+    [
+      41,
+      25,
+      0,
+      20,
+      1,
+      "AUDIO"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 2,
+      "title": " SONIC",
+      "bounding": [
+        100,
+        -70,
+        140,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": " Aud2Vid",
+      "bounding": [
+        -190,
+        -110,
+        270,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7295996822400003,
+      "offset": [
+        190.7112431145888,
+        -214.93134527931022
+      ]
+    },
+    "ue_links": [
+      {
+        "downstream": 18,
+        "downstream_slot": 2,
+        "upstream": "25",
+        "upstream_slot": 0,
+        "controller": 37,
+        "type": "AUDIO"
+      },
+      {
+        "downstream": 18,
+        "downstream_slot": 3,
+        "upstream": "22",
+        "upstream_slot": 0,
+        "controller": 37,
+        "type": "IMAGE"
+      },
+      {
+        "downstream": 20,
+        "downstream_slot": 1,
+        "upstream": "25",
+        "upstream_slot": 0,
+        "controller": 37,
+        "type": "AUDIO"
+      }
+    ],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
