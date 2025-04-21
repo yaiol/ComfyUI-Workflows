@@ -1,0 +1,230 @@
+{
+  "id": "cc42ef51-e190-4900-a0c1-4b29279ff1b5",
+  "revision": 0,
+  "last_node_id": 9,
+  "last_link_id": 3,
+  "nodes": [
+    {
+      "id": 4,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        750,
+        200
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖workflow",
+      "properties": {},
+      "widgets_values": [
+        "0",
+        0.6
+      ],
+      "shape": 1
+    },
+    {
+      "id": 5,
+      "type": "SaveAudio",
+      "pos": [
+        1160,
+        430
+      ],
+      "size": [
+        340,
+        112
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 3
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "SaveAudio"
+      },
+      "widgets_values": [
+        "audio/TTS_KOK",
+        ""
+      ]
+    },
+    {
+      "id": 1,
+      "type": "KokoroSpeaker",
+      "pos": [
+        750,
+        430
+      ],
+      "size": [
+        350,
+        70
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "speaker",
+          "type": "KOKORO_SPEAKER",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "title": "kokoro_speaker",
+      "properties": {
+        "cnr_id": "comfyui-kokoro",
+        "ver": "4622d9e4adf5aa1bfc38eb552ac6047c20c212c9",
+        "Node name for S&R": "KokoroSpeaker"
+      },
+      "widgets_values": [
+        "am_adam"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "KokoroGenerator",
+      "pos": [
+        750,
+        560
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "speaker",
+          "type": "KOKORO_SPEAKER",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "title": "kokoro_generator",
+      "properties": {
+        "cnr_id": "comfyui-kokoro",
+        "ver": "4622d9e4adf5aa1bfc38eb552ac6047c20c212c9",
+        "Node name for S&R": "KokoroGenerator"
+      },
+      "widgets_values": [
+        "To be, or not to be, that is the question. Whether 'tis nobler in the mind to suffer the slings and arrows of outrageous fortune, or to take arms against a sea of troubles, and, by opposing, end them. To die, to sleep, no more, and by a sleep to say we end.",
+        1.0000000000000002,
+        "English"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "Note",
+      "pos": [
+        1160,
+        600
+      ],
+      "size": [
+        350,
+        100
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "tts-kokoro\n==========================================================\nKOK  : KOKORO\nID   : TTS_KOK"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "KOKORO_SPEAKER"
+    ],
+    [
+      3,
+      2,
+      0,
+      5,
+      0,
+      "AUDIO"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": " TTS",
+      "bounding": [
+        800,
+        220,
+        150,
+        80
+      ],
+      "color": "#ffffff",
+      "font_size": 60,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": " KOKORO",
+      "bounding": [
+        960,
+        260,
+        160,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        -474.5357029519373,
+        -119.3516285993141
+      ]
+    },
+    "ue_links": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
