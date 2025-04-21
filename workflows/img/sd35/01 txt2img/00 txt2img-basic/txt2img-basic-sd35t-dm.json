@@ -1,8 +1,8 @@
 {
-  "id": "38dc19d2-e381-425b-9a00-a7c887ae827c",
+  "id": "f23bf129-c1ee-4dd7-a6b2-6cae2975d8d3",
   "revision": 0,
-  "last_node_id": 332,
-  "last_link_id": 680,
+  "last_node_id": 346,
+  "last_link_id": 839,
   "nodes": [
     {
       "id": 316,
@@ -44,13 +44,13 @@
       "flags": {
         "collapsed": false
       },
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 607
+          "link": 662
         }
       ],
       "outputs": [
@@ -60,7 +60,7 @@
           "type": "MODEL",
           "slot_index": 0,
           "links": [
-            654
+            646
           ]
         }
       ],
@@ -77,7 +77,60 @@
       "bgcolor": "#335"
     },
     {
-      "id": 326,
+      "id": 308,
+      "type": "Anything Everywhere3",
+      "pos": [
+        450,
+        120
+      ],
+      "size": [
+        252,
+        66
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_on": "#B39DDB",
+          "label": "MODEL",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 648
+        },
+        {
+          "color_on": "#FFD500",
+          "label": "CLIP",
+          "name": "anything2",
+          "shape": 7,
+          "type": "*",
+          "link": 649
+        },
+        {
+          "color_on": "#FF6E6E",
+          "label": "VAE",
+          "name": "anything3",
+          "shape": 7,
+          "type": "*",
+          "link": 651
+        }
+      ],
+      "outputs": [],
+      "title": "mcv",
+      "properties": {
+        "cnr_id": "cg-use-everywhere",
+        "ver": "887d26c28711813590309bd5d45ad44bb407fc35",
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 310,
       "type": "Bookmark (rgthree)",
       "pos": [
         450,
@@ -103,7 +156,7 @@
       "shape": 1
     },
     {
-      "id": 325,
+      "id": 309,
       "type": "Bookmark (rgthree)",
       "pos": [
         50,
@@ -129,97 +182,7 @@
       "shape": 1
     },
     {
-      "id": 308,
-      "type": "Anything Everywhere3",
-      "pos": [
-        450,
-        130
-      ],
-      "size": [
-        252,
-        66
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "color_on": "#B39DDB",
-          "label": "MODEL",
-          "name": "anything",
-          "shape": 7,
-          "type": "*",
-          "link": 656
-        },
-        {
-          "color_on": "#FFD500",
-          "label": "CLIP",
-          "name": "anything2",
-          "shape": 7,
-          "type": "*",
-          "link": 657
-        },
-        {
-          "color_on": "#FF6E6E",
-          "label": "VAE",
-          "name": "anything3",
-          "shape": 7,
-          "type": "*",
-          "link": 662
-        }
-      ],
-      "outputs": [],
-      "title": "mcv",
-      "properties": {
-        "cnr_id": "cg-use-everywhere",
-        "ver": "887d26c28711813590309bd5d45ad44bb407fc35",
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 302,
-      "type": "UnetLoaderGGUF",
-      "pos": [
-        50,
-        350
-      ],
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "slot_index": 0,
-          "links": [
-            607
-          ]
-        }
-      ],
-      "title": "gguf_model",
-      "properties": {
-        "cnr_id": "ComfyUI-GGUF",
-        "ver": "47bec6147569a138dd30ad3e14f190a36a3be456",
-        "Node name for S&R": "UnetLoaderGGUF"
-      },
-      "widgets_values": [
-        "sd35-sai-large-Q8_0.gguf"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 324,
+      "id": 325,
       "type": "Power Lora Loader (rgthree)",
       "pos": [
         50,
@@ -237,13 +200,13 @@
           "dir": 3,
           "name": "model",
           "type": "MODEL",
-          "link": 654
+          "link": 646
         },
         {
           "dir": 3,
           "name": "clip",
           "type": "CLIP",
-          "link": 655
+          "link": 647
         }
       ],
       "outputs": [
@@ -254,7 +217,7 @@
           "type": "MODEL",
           "slot_index": 0,
           "links": [
-            656
+            648
           ]
         },
         {
@@ -264,7 +227,7 @@
           "type": "CLIP",
           "slot_index": 1,
           "links": [
-            657
+            649
           ]
         }
       ],
@@ -286,11 +249,48 @@
       "bgcolor": "#335"
     },
     {
-      "id": 329,
+      "id": 303,
+      "type": "VAELoader",
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        60
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 0,
+          "links": [
+            651
+          ]
+        }
+      ],
+      "title": "vae_model",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.28",
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sd3x-sai-vae.sft"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 312,
       "type": "Bookmark (rgthree)",
       "pos": [
-        850,
-        170
+        1260,
+        160
       ],
       "size": [
         210,
@@ -303,133 +303,19 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "🔖4 sampler",
+      "title": "🔖9 ouput",
       "properties": {},
       "widgets_values": [
-        "4",
+        "9",
         0.8
       ],
       "shape": 1
     },
     {
-      "id": 135,
-      "type": "EmptySD3LatentImage",
-      "pos": [
-        450,
-        800
-      ],
-      "size": [
-        350,
-        120
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "shape": 3,
-          "type": "LATENT",
-          "slot_index": 0,
-          "links": [
-            627
-          ]
-        }
-      ],
-      "title": "latent_image",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.28",
-        "Node name for S&R": "EmptySD3LatentImage"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 318,
-      "type": "Anything Everywhere",
-      "pos": [
-        710,
-        980
-      ],
-      "size": [
-        239.40000915527344,
-        26
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "color_on": "#FF9CF9",
-          "label": "LATENT",
-          "name": "anything",
-          "shape": 7,
-          "type": "*",
-          "link": 627
-        }
-      ],
-      "outputs": [],
-      "title": "latent",
-      "properties": {
-        "cnr_id": "cg-use-everywhere",
-        "ver": "887d26c28711813590309bd5d45ad44bb407fc35",
-        "Node name for S&R": "Anything Everywhere",
-        "group_restricted": 0,
-        "color_restricted": 0
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 301,
-      "type": "SaveImage",
-      "pos": [
-        1250,
-        290
-      ],
-      "size": [
-        350,
-        400
-      ],
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 606
-        }
-      ],
-      "outputs": [],
-      "title": "output",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.28",
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SD35_GGUF_%ksampler.seed%",
-        ""
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 8,
       "type": "VAEDecode",
       "pos": [
-        1250,
+        1260,
         230
       ],
       "size": [
@@ -473,109 +359,86 @@
       "widgets_values": []
     },
     {
-      "id": 328,
-      "type": "Bookmark (rgthree)",
+      "id": 135,
+      "type": "EmptySD3LatentImage",
       "pos": [
-        1250,
-        170
-      ],
-      "size": [
-        210,
-        62
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖9 ouput",
-      "properties": {},
-      "widgets_values": [
-        "9",
-        0.8
-      ],
-      "shape": 1
-    },
-    {
-      "id": 307,
-      "type": "TripleCLIPLoaderGGUF",
-      "pos": [
-        50,
-        590
+        450,
+        800
       ],
       "size": [
         350,
         110
       ],
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
-          "name": "CLIP",
-          "type": "CLIP",
+          "name": "LATENT",
+          "shape": 3,
+          "type": "LATENT",
           "slot_index": 0,
           "links": [
-            655
+            627
           ]
         }
       ],
-      "title": "gguf_tripleclip_models",
-      "properties": {
-        "cnr_id": "ComfyUI-GGUF",
-        "ver": "47bec6147569a138dd30ad3e14f190a36a3be456",
-        "Node name for S&R": "TripleCLIPLoaderGGUF"
-      },
-      "widgets_values": [
-        "clip_g.sft",
-        "clip_l.sft",
-        "city-t5 xxl-v11-Q8_K.gguf"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 303,
-      "type": "VAELoader",
-      "pos": [
-        50,
-        230
-      ],
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "slot_index": 0,
-          "links": [
-            662
-          ]
-        }
-      ],
-      "title": "vae_model",
+      "title": "latent_image",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.3.28",
-        "Node name for S&R": "VAELoader"
+        "Node name for S&R": "EmptySD3LatentImage"
       },
       "widgets_values": [
-        "sd3x-sai-vae.sft"
+        1024,
+        1024,
+        1
       ],
-      "color": "#223",
-      "bgcolor": "#335"
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
-      "id": 331,
+      "id": 318,
+      "type": "Anything Everywhere",
+      "pos": [
+        710,
+        970
+      ],
+      "size": [
+        239.40000915527344,
+        26
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_on": "#FF9CF9",
+          "label": "LATENT",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 627
+        }
+      ],
+      "outputs": [],
+      "title": "latent",
+      "properties": {
+        "cnr_id": "cg-use-everywhere",
+        "ver": "887d26c28711813590309bd5d45ad44bb407fc35",
+        "Node name for S&R": "Anything Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": [],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 345,
       "type": "workflow>sd35_prompt_negative",
       "pos": [
         450,
@@ -586,7 +449,7 @@
         170
       ],
       "flags": {},
-      "order": 9,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -600,7 +463,7 @@
           "name": "CONDITIONING",
           "type": "CONDITIONING",
           "links": [
-            673
+            824
           ]
         }
       ],
@@ -618,6 +481,106 @@
       "bgcolor": "#533"
     },
     {
+      "id": 319,
+      "type": "Bookmark (rgthree)",
+      "pos": [
+        860,
+        170
+      ],
+      "size": [
+        210,
+        62
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖4 sampler",
+      "properties": {},
+      "widgets_values": [
+        "4",
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "id": 327,
+      "type": "UNETLoader",
+      "pos": [
+        50,
+        350
+      ],
+      "size": [
+        350,
+        82
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "shape": 3,
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            662
+          ]
+        }
+      ],
+      "title": "diffusion_model",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "sd35-sai-turbo-fp8.sft",
+        "fp8_e4m3fn"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 301,
+      "type": "SaveImage",
+      "pos": [
+        1260,
+        290
+      ],
+      "size": [
+        350,
+        400
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 606
+        }
+      ],
+      "outputs": [],
+      "title": "image_output",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.28",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_T2I-BAS_SD35T_DM_%ksampler.seed%",
+        ""
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": [
@@ -629,7 +592,7 @@
         280
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -645,7 +608,7 @@
           "type": "CONDITIONING",
           "slot_index": 0,
           "links": [
-            675
+            668
           ]
         }
       ],
@@ -662,10 +625,74 @@
       "bgcolor": "#353"
     },
     {
+      "id": 307,
+      "type": "TripleCLIPLoaderGGUF",
+      "pos": [
+        50,
+        590
+      ],
+      "size": [
+        350,
+        110
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "slot_index": 0,
+          "links": [
+            647
+          ]
+        }
+      ],
+      "title": "gguf_tripleclip_models",
+      "properties": {
+        "cnr_id": "ComfyUI-GGUF",
+        "ver": "47bec6147569a138dd30ad3e14f190a36a3be456",
+        "Node name for S&R": "TripleCLIPLoaderGGUF"
+      },
+      "widgets_values": [
+        "clip_g.sft",
+        "clip_l.sft",
+        "t5xxl_fp8_e4m3fn.sft"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 346,
+      "type": "Note",
+      "pos": [
+        1650,
+        230
+      ],
+      "size": [
+        520,
+        460
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "txt2img-basic-sd35t-dm\n=========================================================\nSD35 : Stable Diffusion 3.5\nMDT  : Multimodal Diffusion Transformer\nDM   : Diffusion Model\nCTR  : Clip Triple\nID   : T2I-BAS_SD35_GGUF\n\n=========================================================\nMODELS\nsd35-sai-turbo-fp8.sft\nhttps://civitai.com/models/879701?modelVersionId=985155\n\nVAE\nsd3x-sai-vae.sft\nhttps://huggingface.co/stabilityai/stable-diffusion-3.5-large/tree/main/vae\n\nTEXT ENCODERS\nclip_g.sft\nclip_l.sft\nt5xxl_fp8_e4m3fn.sft\nhttps://huggingface.co/stabilityai/stable-diffusion-3.5-large/tree/main/text_encoders"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 294,
       "type": "KSampler",
       "pos": [
-        850,
+        860,
         230
       ],
       "size": [
@@ -684,12 +711,12 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 675
+          "link": 668
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 673
+          "link": 824
         },
         {
           "name": "latent_image",
@@ -717,37 +744,12 @@
       "widgets_values": [
         25191512,
         "randomize",
-        25,
         4,
+        1,
         "euler",
         "sgm_uniform",
         1
       ]
-    },
-    {
-      "id": 315,
-      "type": "Note",
-      "pos": [
-        1650,
-        230
-      ],
-      "size": [
-        550,
-        460
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "txt2img-basic-sd35-gguf\n=========================================================\nSD35 : Stable Diffusion 3.5\nMDT  : Multimodal Diffusion Transformer\nGGUF : GPT-Generated Unified Format\nCTR  : Clip Triple\nID   : T2I-BAS_SD35_GGUF\n\n=========================================================\nMODELS\nsd35-sai-large-*.gguf \nhttps://huggingface.co/city96/stable-diffusion-3.5-medium-gguf\nhttps://huggingface.co/city96/stable-diffusion-3.5-large-gguf\n\nVAE\nsd3x-sai-vae.sft\nhttps://huggingface.co/stabilityai/stable-diffusion-3.5-large/tree/main/vae\n\nTEXT ENCODERS\nclip_g.sft\nclip_l.sft\nhttps://huggingface.co/stabilityai/stable-diffusion-3.5-large/tree/main/text_encoders\n\nt5-v1_1-xxl-encoder-*.gguf\nhttps://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -766,14 +768,6 @@
       301,
       0,
       "IMAGE"
-    ],
-    [
-      607,
-      302,
-      0,
-      13,
-      0,
-      "MODEL"
     ],
     [
       627,
@@ -824,7 +818,87 @@
       "LATENT"
     ],
     [
-      633,
+      641,
+      322,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      642,
+      307,
+      0,
+      71,
+      0,
+      "CLIP"
+    ],
+    [
+      643,
+      13,
+      0,
+      294,
+      0,
+      "MODEL"
+    ],
+    [
+      644,
+      135,
+      0,
+      294,
+      3,
+      "LATENT"
+    ],
+    [
+      645,
+      307,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      646,
+      13,
+      0,
+      325,
+      0,
+      "MODEL"
+    ],
+    [
+      647,
+      307,
+      0,
+      325,
+      1,
+      "CLIP"
+    ],
+    [
+      648,
+      325,
+      0,
+      308,
+      0,
+      "MODEL"
+    ],
+    [
+      649,
+      325,
+      1,
+      308,
+      1,
+      "CLIP"
+    ],
+    [
+      651,
+      303,
+      0,
+      308,
+      2,
+      "VAE"
+    ],
+    [
+      652,
       303,
       0,
       8,
@@ -832,151 +906,103 @@
       "VAE"
     ],
     [
-      634,
-      307,
-      0,
-      71,
-      0,
-      "CLIP"
-    ],
-    [
-      635,
-      307,
-      0,
-      6,
-      0,
-      "CLIP"
-    ],
-    [
-      636,
-      13,
-      0,
-      294,
-      0,
-      "MODEL"
-    ],
-    [
-      637,
-      135,
-      0,
-      294,
-      3,
-      "LATENT"
-    ],
-    [
-      649,
-      323,
-      0,
-      8,
-      1,
-      "VAE"
-    ],
-    [
-      650,
-      13,
-      0,
-      294,
-      0,
-      "MODEL"
-    ],
-    [
-      651,
-      135,
-      0,
-      294,
-      3,
-      "LATENT"
-    ],
-    [
-      652,
-      307,
-      0,
-      71,
-      0,
-      "CLIP"
-    ],
-    [
       653,
-      307,
-      0,
-      6,
+      325,
+      1,
+      71,
       0,
       "CLIP"
     ],
     [
       654,
-      13,
-      0,
-      324,
-      0,
-      "MODEL"
-    ],
-    [
-      655,
-      307,
-      0,
-      324,
+      325,
       1,
+      6,
+      0,
       "CLIP"
     ],
     [
-      656,
-      324,
+      655,
+      325,
       0,
-      308,
+      294,
       0,
       "MODEL"
     ],
     [
+      656,
+      135,
+      0,
+      294,
+      3,
+      "LATENT"
+    ],
+    [
       657,
-      324,
+      303,
+      0,
+      8,
       1,
-      308,
+      "VAE"
+    ],
+    [
+      658,
+      325,
       1,
+      71,
+      0,
+      "CLIP"
+    ],
+    [
+      659,
+      325,
+      0,
+      294,
+      0,
+      "MODEL"
+    ],
+    [
+      660,
+      135,
+      0,
+      294,
+      3,
+      "LATENT"
+    ],
+    [
+      661,
+      325,
+      1,
+      6,
+      0,
       "CLIP"
     ],
     [
       662,
-      303,
+      327,
       0,
-      308,
-      2,
-      "VAE"
+      13,
+      0,
+      "MODEL"
     ],
     [
       663,
-      324,
-      1,
-      71,
+      303,
       0,
-      "CLIP"
+      8,
+      1,
+      "VAE"
     ],
     [
       664,
-      324,
-      1,
-      6,
-      0,
-      "CLIP"
-    ],
-    [
-      665,
-      303,
-      0,
-      8,
-      1,
-      "VAE"
-    ],
-    [
-      666,
-      324,
+      325,
       0,
       294,
       0,
       "MODEL"
     ],
     [
-      667,
+      665,
       135,
       0,
       294,
@@ -984,63 +1010,47 @@
       "LATENT"
     ],
     [
-      668,
-      324,
+      666,
+      325,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      667,
+      325,
       1,
       71,
       0,
       "CLIP"
     ],
     [
-      669,
-      303,
-      0,
-      8,
-      1,
-      "VAE"
-    ],
-    [
-      670,
-      324,
-      1,
+      668,
       6,
       0,
-      "CLIP"
-    ],
-    [
-      671,
-      324,
-      0,
       294,
-      0,
-      "MODEL"
+      1,
+      "CONDITIONING"
     ],
     [
-      672,
-      135,
-      0,
-      294,
-      3,
-      "LATENT"
-    ],
-    [
-      673,
-      331,
+      824,
+      345,
       0,
       294,
       2,
       "CONDITIONING"
     ],
     [
-      675,
+      825,
+      325,
+      1,
       6,
       0,
-      294,
-      1,
-      "CONDITIONING"
+      "CLIP"
     ],
     [
-      676,
+      826,
       303,
       0,
       8,
@@ -1048,31 +1058,103 @@
       "VAE"
     ],
     [
-      677,
-      324,
+      827,
+      325,
       1,
-      "331:0",
+      "345:0",
+      0,
+      "CLIP"
+    ],
+    [
+      828,
+      325,
+      0,
+      294,
+      0,
+      "MODEL"
+    ],
+    [
+      829,
+      135,
+      0,
+      294,
+      3,
+      "LATENT"
+    ],
+    [
+      830,
+      325,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      831,
+      303,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      832,
+      325,
+      1,
+      "345:0",
+      0,
+      "CLIP"
+    ],
+    [
+      833,
+      325,
+      0,
+      294,
+      0,
+      "MODEL"
+    ],
+    [
+      834,
+      135,
+      0,
+      294,
+      3,
+      "LATENT"
+    ],
+    [
+      835,
+      303,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      836,
+      325,
+      1,
+      "345:0",
       "0",
       "CLIP"
     ],
     [
-      678,
-      324,
+      837,
+      325,
       1,
       6,
       0,
       "CLIP"
     ],
     [
-      679,
-      324,
+      838,
+      325,
       0,
       294,
       0,
       "MODEL"
     ],
     [
-      680,
+      839,
       135,
       0,
       294,
@@ -1083,19 +1165,6 @@
   "groups": [
     {
       "id": 1,
-      "title": " SD35 GGUF",
-      "bounding": [
-        320,
-        -40,
-        200,
-        40
-      ],
-      "color": "#00ffff",
-      "font_size": 30,
-      "flags": {}
-    },
-    {
-      "id": 2,
       "title": " Txt2Img",
       "bounding": [
         50,
@@ -1106,15 +1175,28 @@
       "color": "#ffffff",
       "font_size": 60,
       "flags": {}
+    },
+    {
+      "id": 2,
+      "title": " SD35T DM",
+      "bounding": [
+        320,
+        -40,
+        170,
+        40
+      ],
+      "color": "#00ffff",
+      "font_size": 30,
+      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1,
+      "scale": 1.1,
       "offset": [
-        -237.17569420513996,
-        -94.26093851777146
+        -358.0323920730042,
+        -40.243432121527455
       ]
     },
     "ue_links": [
@@ -1127,9 +1209,9 @@
         "type": "VAE"
       },
       {
-        "downstream": "331:0",
+        "downstream": "345:0",
         "downstream_slot": "0",
-        "upstream": "324",
+        "upstream": "325",
         "upstream_slot": 1,
         "controller": 308,
         "type": "CLIP"
@@ -1137,7 +1219,7 @@
       {
         "downstream": 6,
         "downstream_slot": 0,
-        "upstream": "324",
+        "upstream": "325",
         "upstream_slot": 1,
         "controller": 308,
         "type": "CLIP"
@@ -1145,7 +1227,7 @@
       {
         "downstream": 294,
         "downstream_slot": 0,
-        "upstream": "324",
+        "upstream": "325",
         "upstream_slot": 0,
         "controller": 308,
         "type": "MODEL"
@@ -1159,6 +1241,10 @@
         "type": "LATENT"
       }
     ],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
     "groupNodes": {
       "sd35_prompt_negative": {
         "nodes": [
@@ -1534,11 +1620,7 @@
           "5": {}
         }
       }
-    },
-    "VHS_latentpreview": false,
-    "VHS_latentpreviewrate": 0,
-    "VHS_MetadataImage": true,
-    "VHS_KeepIntermediate": true
+    }
   },
   "version": 0.4
 }
