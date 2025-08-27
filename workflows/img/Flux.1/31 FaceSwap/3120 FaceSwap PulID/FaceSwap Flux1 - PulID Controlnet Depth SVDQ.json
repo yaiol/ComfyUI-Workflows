@@ -2,7 +2,7 @@
   "id": "b2ac78a1-9f70-4787-baf7-9703dc66e15e",
   "revision": 0,
   "last_node_id": 65,
-  "last_link_id": 194,
+  "last_link_id": 198,
   "nodes": [
     {
       "id": 19,
@@ -79,7 +79,7 @@
         },
         {
           "label": "anything",
-          "name": "anything54",
+          "name": "anything57",
           "type": "*",
           "link": null
         }
@@ -98,7 +98,7 @@
           "title_regex": null,
           "input_regex": null,
           "group_regex": null,
-          "next_input_index": 54
+          "next_input_index": 57
         }
       },
       "widgets_values": []
@@ -210,7 +210,7 @@
         },
         {
           "label": "anything",
-          "name": "anything51",
+          "name": "anything54",
           "type": "*",
           "link": null
         }
@@ -229,7 +229,7 @@
           "title_regex": null,
           "input_regex": null,
           "group_regex": null,
-          "next_input_index": 51
+          "next_input_index": 54
         }
       },
       "widgets_values": []
@@ -825,7 +825,7 @@
         -430
       ],
       "size": [
-        575.1953125,
+        584.23828125,
         40
       ],
       "flags": {
@@ -835,7 +835,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "FaceSwap + Controlnet Depth PulID",
+      "title": "FaceSwap  PulID + Controlnet Depth",
       "properties": {
         "fontSize": 40,
         "fontFamily": "Calibri",
@@ -923,53 +923,6 @@
       "bgcolor": "#00bfff"
     },
     {
-      "id": 62,
-      "type": "LoadImage",
-      "pos": [
-        -1250,
-        -170
-      ],
-      "size": [
-        350,
-        450
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "slot_index": 0,
-          "links": [
-            165
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "title": "image_input_1",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.26",
-        "Node name for S&R": "LoadImage",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "character-avatar-cg.jpg",
-        "image"
-      ],
-      "color": "#ffaa14",
-      "bgcolor": "#ff9600"
-    },
-    {
       "id": 43,
       "type": "36feaba6-3903-4dfa-afab-e6c6edc1c522",
       "pos": [
@@ -981,7 +934,7 @@
         460
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1062,54 +1015,6 @@
           "version": "7.0.1"
         }
       }
-    },
-    {
-      "id": 61,
-      "type": "LoadImage",
-      "pos": [
-        -850,
-        -170
-      ],
-      "size": [
-        350,
-        450
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "slot_index": 0,
-          "links": [
-            164
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "slot_index": 1,
-          "links": []
-        }
-      ],
-      "title": "image_input_2",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.26",
-        "Node name for S&R": "LoadImage",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "character-woman-cowboy.jpg",
-        "image"
-      ],
-      "color": "#8cd2ff",
-      "bgcolor": "#78beff"
     },
     {
       "id": 64,
@@ -1427,6 +1332,101 @@
         1024,
         "center"
       ]
+    },
+    {
+      "id": 62,
+      "type": "LoadImage",
+      "pos": [
+        -1250,
+        -170
+      ],
+      "size": [
+        350,
+        450
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            165
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "image_input_1",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "wf-character-avatar-cg.jpg",
+        "image"
+      ],
+      "color": "#ffaa14",
+      "bgcolor": "#ff9600"
+    },
+    {
+      "id": 61,
+      "type": "LoadImage",
+      "pos": [
+        -850,
+        -170
+      ],
+      "size": [
+        350,
+        450
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            164
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "image_input_2",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "wf-character-woman-cowgirl.jpg",
+        "image"
+      ],
+      "color": "#8cd2ff",
+      "bgcolor": "#78beff"
     }
   ],
   "links": [
@@ -2034,10 +2034,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8140274938684426,
+      "scale": 0.45949729863574756,
       "offset": [
-        -184.36760618987114,
-        259.6124015377112
+        1812.7641913141485,
+        766.6526769420532
       ]
     },
     "node_versions": {
@@ -2078,10 +2078,10 @@
       }
     ],
     "links_added_by_ue": [
-      191,
-      192,
-      193,
-      194
+      195,
+      196,
+      197,
+      198
     ],
     "frontendVersion": "1.25.10",
     "VHS_latentpreview": false,
