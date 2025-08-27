@@ -2,7 +2,7 @@
   "id": "18e718d4-c69e-43fd-80ae-92c71bbf88d4",
   "revision": 0,
   "last_node_id": 100,
-  "last_link_id": 296,
+  "last_link_id": 312,
   "nodes": [
     {
       "id": 54,
@@ -63,7 +63,7 @@
         186
       ],
       "flags": {},
-      "order": 23,
+      "order": 22,
       "mode": 4,
       "inputs": [
         {
@@ -159,54 +159,6 @@
       "shape": 1
     },
     {
-      "id": 31,
-      "type": "LoadImage",
-      "pos": [
-        -350,
-        230
-      ],
-      "size": [
-        350,
-        450
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "slot_index": 0,
-          "links": [
-            144
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "slot_index": 1,
-          "links": []
-        }
-      ],
-      "title": "input",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.26",
-        "Node name for S&R": "LoadImage",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "character-woman-pirate.jpg",
-        "image"
-      ],
-      "color": "#ffaa14",
-      "bgcolor": "#ff9600"
-    },
-    {
       "id": 68,
       "type": "Bookmark (rgthree)",
       "pos": [
@@ -220,7 +172,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -251,7 +203,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -314,7 +266,7 @@
         370
       ],
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 4,
       "inputs": [
         {
@@ -350,7 +302,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -381,7 +333,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -412,7 +364,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -443,7 +395,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -456,7 +408,7 @@
         },
         {
           "label": "anything",
-          "name": "anything22",
+          "name": "anything23",
           "type": "*",
           "link": null
         }
@@ -471,7 +423,7 @@
           "version": "7.0.1",
           "group_restricted": 0,
           "color_restricted": 0,
-          "next_input_index": 22,
+          "next_input_index": 23,
           "widget_ue_connectable": {}
         }
       },
@@ -489,7 +441,7 @@
         60
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -533,13 +485,13 @@
       "flags": {
         "collapsed": true
       },
-      "order": 22,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
           "name": "pixels",
           "type": "IMAGE",
-          "link": 295
+          "link": 311
         },
         {
           "name": "vae",
@@ -659,7 +611,7 @@
         90
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 4,
       "inputs": [
         {
@@ -676,7 +628,7 @@
           "links": [
             119,
             120,
-            295
+            311
           ]
         }
       ],
@@ -739,12 +691,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ygolx_00007_.png&type=temp&subfolder=&rand=0.6647967957540928"
+            "url": "/api/view?filename=rgthree.compare._temp_fqhej_00003_.png&type=temp&subfolder=&rand=0.23902244126566874"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ygolx_00008_.png&type=temp&subfolder=&rand=0.9346634567483264"
+            "url": "/api/view?filename=rgthree.compare._temp_fqhej_00004_.png&type=temp&subfolder=&rand=0.45232885252706934"
           }
         ]
       ]
@@ -854,7 +806,7 @@
         460
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -911,7 +863,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -946,7 +898,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -981,7 +933,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1020,7 +972,7 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 296
+          "link": 312
         },
         {
           "name": "positive",
@@ -1080,7 +1032,7 @@
         130
       ],
       "flags": {},
-      "order": 24,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -1132,7 +1084,7 @@
         130
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1181,7 +1133,7 @@
         60
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1250,7 +1202,7 @@
         },
         {
           "label": "anything",
-          "name": "anything48",
+          "name": "anything49",
           "type": "*",
           "link": null
         }
@@ -1269,7 +1221,7 @@
           "title_regex": null,
           "input_regex": null,
           "group_regex": null,
-          "next_input_index": 48
+          "next_input_index": 49
         }
       },
       "widgets_values": []
@@ -1286,7 +1238,7 @@
         210
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1332,7 +1284,7 @@
         154
       ],
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 4,
       "inputs": [
         {
@@ -1347,7 +1299,7 @@
           "type": "MODEL",
           "slot_index": 0,
           "links": [
-            296
+            312
           ]
         }
       ],
@@ -1368,6 +1320,54 @@
         1,
         "cuda"
       ]
+    },
+    {
+      "id": 31,
+      "type": "LoadImage",
+      "pos": [
+        -350,
+        230
+      ],
+      "size": [
+        350,
+        450
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            144
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": []
+        }
+      ],
+      "title": "input",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "wf-character-woman-pirate-2.jpg",
+        "image"
+      ],
+      "color": "#ffaa14",
+      "bgcolor": "#ff9600"
     },
     {
       "id": 33,
@@ -1393,7 +1393,7 @@
         }
       },
       "widgets_values": [
-        "img2img-basic+tfl-fx10-gguf\n=======================================================\nFX10 : Flux.1\nSVDQ : Singular Value Decomposition Quantization\nCSD  : Clip Standard\nID   : I2I-BAS+TFL_FX10_GGUF"
+        "img2img-basic-fx10-gguf\n=======================================================\nFX10 : Flux.1\nSVDQ : Singular Value Decomposition Quantization\nCSD  : Clip Standard\nID   : I2I-BAS_FX10_GGUF"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1433,7 +1433,7 @@
         }
       },
       "widgets_values": [
-        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BAS+TFL_FX10_SVDQ_%ksampler.seed%"
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BAS_FX10_SVDQ_%ksampler.seed%"
       ],
       "color": "#323",
       "bgcolor": "#535"
@@ -2257,7 +2257,7 @@
       "VAE"
     ],
     [
-      295,
+      311,
       57,
       0,
       39,
@@ -2265,7 +2265,7 @@
       "IMAGE"
     ],
     [
-      296,
+      312,
       88,
       0,
       3,
@@ -2636,10 +2636,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4665073802097333,
+      "scale": 0.7513148009015777,
       "offset": [
-        681.5426250396017,
-        377.4416079242638
+        549.6040887740062,
+        -47.26681338860803
       ]
     },
     "node_versions": {
@@ -2708,12 +2708,12 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "links_added_by_ue": [
-      289,
-      290,
-      291,
-      292,
-      293,
-      294
+      305,
+      306,
+      307,
+      308,
+      309,
+      310
     ],
     "frontendVersion": "1.25.10"
   },
