@@ -1,8 +1,8 @@
 {
   "id": "404d2e1e-e2f4-4515-a7b8-b3fc0f138443",
   "revision": 0,
-  "last_node_id": 152,
-  "last_link_id": 1135,
+  "last_node_id": 153,
+  "last_link_id": 1185,
   "nodes": [
     {
       "id": 39,
@@ -129,92 +129,6 @@
       "shape": 1
     },
     {
-      "id": 125,
-      "type": "KSamplerSelect",
-      "pos": [
-        850,
-        480
-      ],
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "SAMPLER",
-          "type": "SAMPLER",
-          "links": [
-            587
-          ]
-        }
-      ],
-      "title": "sampler",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.24",
-        "Node name for S&R": "KSamplerSelect",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "euler"
-      ]
-    },
-    {
-      "id": 126,
-      "type": "BasicGuider",
-      "pos": [
-        850,
-        370
-      ],
-      "size": [
-        350,
-        50
-      ],
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": null
-        },
-        {
-          "name": "conditioning",
-          "type": "CONDITIONING",
-          "link": 1109
-        }
-      ],
-      "outputs": [
-        {
-          "name": "GUIDER",
-          "type": "GUIDER",
-          "slot_index": 0,
-          "links": [
-            586
-          ]
-        }
-      ],
-      "title": "guider",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.24",
-        "Node name for S&R": "BasicGuider",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": []
-    },
-    {
       "id": 93,
       "type": "FluxResolutionNode",
       "pos": [
@@ -226,7 +140,7 @@
         214
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -289,7 +203,7 @@
         130
       ],
       "flags": {},
-      "order": 18,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -357,7 +271,7 @@
         130
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -406,7 +320,7 @@
         60
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -449,7 +363,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -467,394 +381,6 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 113,
-      "type": "NunchakuFluxDiTLoader",
-      "pos": [
-        50,
-        230
-      ],
-      "size": [
-        350,
-        210
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            1074
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
-        "ver": "0.3.4",
-        "Node name for S&R": "NunchakuFluxDiTLoader",
-        "cnr_id": "comfyui-nunchaku",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "fx10-nunchaku-dev-svdq-int4 r32.sft",
-        0,
-        "nunchaku-fp16",
-        "auto",
-        0,
-        "float16",
-        "enabled"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 80,
-      "type": "PlaySound|pysssss",
-      "pos": [
-        1500,
-        700
-      ],
-      "size": [
-        270,
-        106
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "any",
-          "type": "*",
-          "link": 518
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "shape": 6,
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "notify",
-      "properties": {
-        "cnr_id": "comfyui-custom-scripts",
-        "ver": "1.2.5",
-        "Node name for S&R": "PlaySound|pysssss",
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": [
-        "on empty queue",
-        0.5,
-        "notify.mp3"
-      ]
-    },
-    {
-      "id": 124,
-      "type": "BasicScheduler",
-      "pos": [
-        850,
-        600
-      ],
-      "size": [
-        350,
-        110
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "SIGMAS",
-          "type": "SIGMAS",
-          "links": [
-            588
-          ]
-        }
-      ],
-      "title": "scheduler",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.24",
-        "Node name for S&R": "BasicScheduler",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "simple",
-        20,
-        1
-      ]
-    },
-    {
-      "id": 128,
-      "type": "SamplerCustomAdvanced",
-      "pos": [
-        1250,
-        230
-      ],
-      "size": [
-        350,
-        370
-      ],
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "noise",
-          "type": "NOISE",
-          "link": 585
-        },
-        {
-          "name": "guider",
-          "type": "GUIDER",
-          "link": 586
-        },
-        {
-          "name": "sampler",
-          "type": "SAMPLER",
-          "link": 587
-        },
-        {
-          "name": "sigmas",
-          "type": "SIGMAS",
-          "link": 588
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "output",
-          "type": "LATENT",
-          "slot_index": 0,
-          "links": [
-            590
-          ]
-        },
-        {
-          "name": "denoised_output",
-          "type": "LATENT",
-          "links": null
-        }
-      ],
-      "title": "csampler",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.24",
-        "Node name for S&R": "SamplerCustomAdvanced",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 75,
-      "type": "SaveImage",
-      "pos": [
-        1650,
-        230
-      ],
-      "size": [
-        350,
-        400
-      ],
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 519
-        }
-      ],
-      "outputs": [],
-      "title": "output",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.26",
-        "Node name for S&R": "SaveImage",
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/_%date:yyMMdd-hhmmss%-0_T2I-BAS_FX10_SDVQ_%seed.noise%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 73,
-      "type": "VAEDecode",
-      "pos": [
-        1470,
-        650
-      ],
-      "size": [
-        210,
-        46
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 23,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 590
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "slot_index": 0,
-          "links": [
-            518,
-            519
-          ]
-        }
-      ],
-      "title": "vae_decode",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.26",
-        "Node name for S&R": "VAEDecode",
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 127,
-      "type": "RandomNoise",
-      "pos": [
-        850,
-        230
-      ],
-      "size": [
-        350,
-        82
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "NOISE",
-          "type": "NOISE",
-          "links": [
-            585
-          ]
-        }
-      ],
-      "title": "seed",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.24",
-        "Node name for S&R": "RandomNoise",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        25191512,
-        "fixed"
-      ]
-    },
-    {
-      "id": 147,
-      "type": "800fb0f5-73f3-4b99-9d1a-1d4d577fe8f6",
-      "pos": [
-        450,
-        230
-      ],
-      "size": [
-        340,
-        470
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "label": "positive",
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            1109
-          ]
-        },
-        {
-          "label": "negative",
-          "name": "CONDITIONING_1",
-          "type": "CONDITIONING",
-          "links": []
-        }
-      ],
-      "title": "prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.50",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "Natural close-up portrait of a woman with soft curly purple hair, light frizz and volume, subtle flyaway strands, smiling gently and making eye contact with the camera, captured with a smartphone in casual morning light, slight uneven lighting on face, soft natural shadows, visible skin texture, light freckles, no heavy retouching, wearing a simple T-shirt, shallow depth of field with a slightly blurred background, hint of a cozy indoor setting like a window or curtain in the back, authentic and candid expression, amateur photography style",
-        30
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 123,
       "type": "EmptySD3LatentImage",
       "pos": [
@@ -866,7 +392,7 @@
         106
       ],
       "flags": {},
-      "order": 17,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -931,7 +457,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -944,7 +470,7 @@
         },
         {
           "label": "anything",
-          "name": "anything15",
+          "name": "anything16",
           "type": "*",
           "link": null
         }
@@ -963,7 +489,7 @@
           "title_regex": null,
           "input_regex": null,
           "group_regex": null,
-          "next_input_index": 15
+          "next_input_index": 16
         }
       },
       "widgets_values": []
@@ -982,7 +508,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1009,7 +535,7 @@
         },
         {
           "label": "anything",
-          "name": "anything42",
+          "name": "anything43",
           "type": "*",
           "link": null
         }
@@ -1028,7 +554,7 @@
           "title_regex": null,
           "input_regex": null,
           "group_regex": null,
-          "next_input_index": 42
+          "next_input_index": 43
         }
       },
       "widgets_values": []
@@ -1047,7 +573,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1078,7 +604,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 14,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1113,7 +639,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 15,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1148,7 +674,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 16,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1168,6 +694,303 @@
       },
       "color": "#2a363b",
       "bgcolor": "#3f5159"
+    },
+    {
+      "id": 113,
+      "type": "NunchakuFluxDiTLoader",
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        210
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1074
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
+        "ver": "0.3.4",
+        "Node name for S&R": "NunchakuFluxDiTLoader",
+        "cnr_id": "comfyui-nunchaku",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "fx10-nunchaku-dev-svdq-int4 r32.sft",
+        0,
+        "nunchaku-fp16",
+        "auto",
+        0,
+        "float16",
+        "enabled"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 147,
+      "type": "800fb0f5-73f3-4b99-9d1a-1d4d577fe8f6",
+      "pos": [
+        450,
+        230
+      ],
+      "size": [
+        350,
+        470
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "positive",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            1172
+          ]
+        },
+        {
+          "label": "negative",
+          "name": "CONDITIONING_1",
+          "type": "CONDITIONING",
+          "links": [
+            1173
+          ]
+        }
+      ],
+      "title": "prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "Natural close-up portrait of a woman with soft curly purple hair, light frizz and volume, subtle flyaway strands, smiling gently and making eye contact with the camera, captured with a smartphone in casual morning light, slight uneven lighting on face, soft natural shadows, visible skin texture, light freckles, no heavy retouching, wearing a simple T-shirt, shallow depth of field with a slightly blurred background, hint of a cozy indoor setting like a window or curtain in the back, authentic and candid expression, amateur photography style",
+        30
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 153,
+      "type": "KSampler",
+      "pos": [
+        860,
+        230
+      ],
+      "size": [
+        340,
+        580
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 1172
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 1173
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            1174
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.51",
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        25191512,
+        "fixed",
+        20,
+        1,
+        "euler",
+        "simple",
+        1
+      ]
+    },
+    {
+      "id": 75,
+      "type": "SaveImage",
+      "pos": [
+        1250,
+        230
+      ],
+      "size": [
+        350,
+        400
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 519
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/_%date:yyMMdd-hhmmss%-0_T2I-BAS_FX10_SDVQ_%seed.noise_seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 73,
+      "type": "VAEDecode",
+      "pos": [
+        1080,
+        860
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 1174
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            518,
+            519
+          ]
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 80,
+      "type": "PlaySound|pysssss",
+      "pos": [
+        1110,
+        910
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any",
+          "type": "*",
+          "link": 518
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "shape": 6,
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "notify",
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "PlaySound|pysssss",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "on empty queue",
+        0.5,
+        "notify.mp3"
+      ]
     }
   ],
   "links": [
@@ -1716,46 +1539,6 @@
       "INT"
     ],
     [
-      585,
-      127,
-      0,
-      128,
-      0,
-      "NOISE"
-    ],
-    [
-      586,
-      126,
-      0,
-      128,
-      1,
-      "GUIDER"
-    ],
-    [
-      587,
-      125,
-      0,
-      128,
-      2,
-      "SAMPLER"
-    ],
-    [
-      588,
-      124,
-      0,
-      128,
-      3,
-      "SIGMAS"
-    ],
-    [
-      590,
-      128,
-      0,
-      73,
-      0,
-      "LATENT"
-    ],
-    [
       971,
       118,
       0,
@@ -1804,18 +1587,34 @@
       "INT"
     ],
     [
-      1109,
-      147,
-      0,
-      126,
-      1,
-      "CONDITIONING"
-    ],
-    [
       1130,
       123,
       0,
       148,
+      0,
+      "LATENT"
+    ],
+    [
+      1172,
+      147,
+      0,
+      153,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      1173,
+      147,
+      1,
+      153,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      1174,
+      153,
+      0,
+      73,
       0,
       "LATENT"
     ]
@@ -2183,10 +1982,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.0152559799477132,
+      "scale": 0.6934334949441413,
       "offset": [
-        159.11353107452015,
-        129.37472341632662
+        835.6903023686837,
+        167.1985216343107
       ]
     },
     "groupNodes": {},
@@ -2199,7 +1998,15 @@
     },
     "ue_links": [
       {
-        "downstream": 126,
+        "downstream": 147,
+        "downstream_slot": 0,
+        "upstream": "119",
+        "upstream_slot": 0,
+        "controller": 142,
+        "type": "CLIP"
+      },
+      {
+        "downstream": 153,
         "downstream_slot": 0,
         "upstream": "118",
         "upstream_slot": 0,
@@ -2207,16 +2014,8 @@
         "type": "MODEL"
       },
       {
-        "downstream": 124,
-        "downstream_slot": 0,
-        "upstream": "118",
-        "upstream_slot": 0,
-        "controller": 142,
-        "type": "MODEL"
-      },
-      {
-        "downstream": 128,
-        "downstream_slot": 4,
+        "downstream": 153,
+        "downstream_slot": 3,
         "upstream": "123",
         "upstream_slot": 0,
         "controller": 148,
@@ -2229,14 +2028,6 @@
         "upstream_slot": 0,
         "controller": 142,
         "type": "VAE"
-      },
-      {
-        "downstream": 147,
-        "downstream_slot": 0,
-        "upstream": "119",
-        "upstream_slot": 0,
-        "controller": 142,
-        "type": "CLIP"
       }
     ],
     "VHS_latentpreview": false,
@@ -2244,11 +2035,10 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "links_added_by_ue": [
-      1131,
-      1132,
-      1133,
-      1134,
-      1135
+      1182,
+      1183,
+      1184,
+      1185
     ],
     "frontendVersion": "1.25.10"
   },
