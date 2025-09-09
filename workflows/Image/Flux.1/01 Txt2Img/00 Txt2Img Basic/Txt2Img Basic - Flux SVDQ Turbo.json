@@ -1,8 +1,8 @@
 {
   "id": "404d2e1e-e2f4-4515-a7b8-b3fc0f138443",
   "revision": 0,
-  "last_node_id": 153,
-  "last_link_id": 1147,
+  "last_node_id": 156,
+  "last_link_id": 1186,
   "nodes": [
     {
       "id": 39,
@@ -129,92 +129,6 @@
       "shape": 1
     },
     {
-      "id": 125,
-      "type": "KSamplerSelect",
-      "pos": [
-        850,
-        480
-      ],
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "SAMPLER",
-          "type": "SAMPLER",
-          "links": [
-            587
-          ]
-        }
-      ],
-      "title": "sampler",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.24",
-        "Node name for S&R": "KSamplerSelect",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "euler"
-      ]
-    },
-    {
-      "id": 126,
-      "type": "BasicGuider",
-      "pos": [
-        850,
-        370
-      ],
-      "size": [
-        350,
-        50
-      ],
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": null
-        },
-        {
-          "name": "conditioning",
-          "type": "CONDITIONING",
-          "link": 1109
-        }
-      ],
-      "outputs": [
-        {
-          "name": "GUIDER",
-          "type": "GUIDER",
-          "slot_index": 0,
-          "links": [
-            586
-          ]
-        }
-      ],
-      "title": "guider",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.24",
-        "Node name for S&R": "BasicGuider",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": []
-    },
-    {
       "id": 93,
       "type": "FluxResolutionNode",
       "pos": [
@@ -226,7 +140,7 @@
         214
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -278,333 +192,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 110,
-      "type": "MarkdownNote",
-      "pos": [
-        -850,
-        -70
-      ],
-      "size": [
-        450,
-        1170
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Help",
-      "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "# References\n\n```\nFile : txt2img-basic-fx10-sdvq\nID   : T2I-BAS_FX10_SDVQ\nT2I  : Text to image\nFX10 : Flux.1\nSVDQ : Singular Value Decomposition Quantization\nCDL  : Clip Dual\n```\n# Flux 1 Models\n\n```\n📂 models\n├─📂 diffusion_models\n│ ├─ svdq-int4_r32-flux.1-dev.safetensors\n│ ├─ svdq-fp4_r32-flux.1-dev.safetensors\n│ ├─ svdq-int4_r32-flux.1-schnell.safetensors\n│ ├─ svdq-fp4_r32-flux.1-schnell.safetensors\n│ ├─ svdq-int4_r32-flux.1-kontext-dev.safetensors\n│ ├─ svdq-fp4_r32-flux.1-kontext-dev.safetensors\n│ ├─ svdq-int4_r32-flux.1-krea-dev.safetensor\n│ ├─ svdq-fp4_r32-flux.1-krea-dev.safetensors\n│ ├─ svdq-int4_r32-flux.1-dev-colossusv12.safetensors\n│ └─ svdq-fp4_r32-flux.1-dev-colossusv12.safetensors\n├─📂 vae\n│ └─ ae.safetensors\n├─📂 text_encoders\n│ ├─ t5-v1_1-xxl-encoder-Q8_0.gguf\n│ └─ clip_l.safetensors\n└─📂 upscale_models\n  └─ 4x_NMKD-Siax_200k.pth\n```\n\n\n## Diffusion Models (SVDQ)\nflux.1 dev\n- [⬇️](https://huggingface.co/mit-han-lab/nunchaku-flux.1-dev/resolve/main/svdq-int4_r32-flux.1-dev.safetensors?download=true) svdq-int4_r32-flux.1-dev.safetensors (pre-50-series)\n- [⬇️](https://huggingface.co/mit-han-lab/nunchaku-flux.1-dev/resolve/main/svdq-fp4_r32-flux.1-dev.safetensors?download=true) svdq-fp4_r32-flux.1-dev.safetensors (50-series)\n\nflux.1 schnell\n- [⬇️](https://huggingface.co/mit-han-lab/nunchaku-flux.1-schnell/resolve/main/svdq-int4_r32-flux.1-schnell.safetensors?download=true) svdq-int4_r32-flux.1-schnell.safetensors (pre-50-series)\n- [⬇️](https://huggingface.co/mit-han-lab/nunchaku-flux.1-schnell/resolve/main/svdq-fp4_r32-flux.1-schnell.safetensors?download=true) svdq-fp4_r32-flux.1-schnell.safetensors (50-series)\n\nflux.1 kontext\n- [⬇️](https://huggingface.co/mit-han-lab/nunchaku-flux.1-kontext-dev/resolve/main/svdq-int4_r32-flux.1-kontext-dev.safetensors?download=true) svdq-int4_r32-flux.1-kontext-dev.safetensors (pre-50-series)\n- [⬇️](https://huggingface.co/mit-han-lab/nunchaku-flux.1-kontext-dev/resolve/main/svdq-fp4_r32-flux.1-kontext-dev.safetensors?download=true) svdq-fp4_r32-flux.1-kontext-dev.safetensors (50-series)\n\nflux.1 krea\n- [⬇️](https://huggingface.co/nunchaku-tech/nunchaku-flux.1-krea-dev/resolve/main/svdq-int4_r32-flux.1-krea-dev.safetensors?download=true) svdq-int4_r32-flux.1-krea-dev.safetensors (pre-50-series)\n- [⬇️](https://huggingface.co/nunchaku-tech/nunchaku-flux.1-krea-dev/resolve/main/svdq-fp4_r32-flux.1-krea-dev.safetensors?download=true) svdq-fp4_r32-flux.1-krea-dev.safetensors (50-series)\n\nflux.1 dev colossus\n- [⬇️](https://huggingface.co/nunchaku-tech/nunchaku-flux.1-dev-colossus/resolve/main/svdq-int4_r32-flux.1-dev-colossusv12.safetensors?download=true) svdq-int4_r32-flux.1-dev-colossusv12.safetensors (pre-50-series)\n- [⬇️](https://huggingface.co/nunchaku-tech/nunchaku-flux.1-dev-colossus/resolve/main/svdq-fp4_r32-flux.1-dev-colossusv12.safetensors?download=true) svdq-fp4_r32-flux.1-dev-colossusv12.safetensors (pre-50-series)\n\n## Dual Clip Loader (GGUF) \n\n- [⬇️](https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/resolve/main/t5-v1_1-xxl-encoder-Q8_0.gguf?download=true) t5-v1_1-xxl-encoder-Q8_0.gguf [other versions](https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/tree/main) \n- [⬇️](https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors?download=true)  clip_l.safetensor\n\n## VAE\n\n- [⬇️](https://huggingface.co/Comfy-Org/Lumina_Image_2.0_Repackaged/resolve/main/split_files/vae/ae.safetensors?download=true) ae.safetensor\n\n## Upscale Model  \n\n- [⬇️](https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth?download=true) 4x_NMKD-Siax_200k.pth \n\n✳️​\n\n# Custom Nodes\n\n- [ComfyUI rgthree](https://github.com/rgthree/rgthree-comfy)\n- [ComfyUI Easy Use](https://github.com/yolain/ComfyUI-Easy-Use)\n- [ComfyUI Custom Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)\n- [ComfyUI TiledDiffusion](https://github.com/shiimizu/ComfyUI-TiledDiffusion)\n- [ComfyUI Image Size Tools](https://github.com/TheLustriVA/ComfyUI-Image-Size-Tools)\n- [ComfyUI GGUF](https://github.com/city96/ComfyUI-GGUF)\n- [ComfyUI TeaCache](https://github.com/welltop-cn/ComfyUI-TeaCache)\n\n# Resources\n- [Github](https://github.com/yaiol/ComfyUI-Workflows)\n- [SVDQuant: Absorbing Outliers by Low-Rank Components for 4-Bit Diffusion Models](https://arxiv.org/abs/2411.05007)\n\n\n\n\n"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
-      "id": 80,
-      "type": "PlaySound|pysssss",
-      "pos": [
-        1500,
-        700
-      ],
-      "size": [
-        270,
-        106
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "any",
-          "type": "*",
-          "link": 518
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "shape": 6,
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "notify",
-      "properties": {
-        "cnr_id": "comfyui-custom-scripts",
-        "ver": "1.2.5",
-        "Node name for S&R": "PlaySound|pysssss",
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": [
-        "on empty queue",
-        0.5,
-        "notify.mp3"
-      ]
-    },
-    {
-      "id": 128,
-      "type": "SamplerCustomAdvanced",
-      "pos": [
-        1250,
-        230
-      ],
-      "size": [
-        350,
-        370
-      ],
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "noise",
-          "type": "NOISE",
-          "link": 585
-        },
-        {
-          "name": "guider",
-          "type": "GUIDER",
-          "link": 586
-        },
-        {
-          "name": "sampler",
-          "type": "SAMPLER",
-          "link": 587
-        },
-        {
-          "name": "sigmas",
-          "type": "SIGMAS",
-          "link": 588
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "output",
-          "type": "LATENT",
-          "slot_index": 0,
-          "links": [
-            590
-          ]
-        },
-        {
-          "name": "denoised_output",
-          "type": "LATENT",
-          "links": null
-        }
-      ],
-      "title": "csampler",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.24",
-        "Node name for S&R": "SamplerCustomAdvanced",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 75,
-      "type": "SaveImage",
-      "pos": [
-        1650,
-        230
-      ],
-      "size": [
-        350,
-        400
-      ],
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 519
-        }
-      ],
-      "outputs": [],
-      "title": "output",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.26",
-        "Node name for S&R": "SaveImage",
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": [
-        "%date:yyMMdd%/_%date:yyMMdd-hhmmss%-0_T2I-BAS_FX10_SDVQ_%seed.noise%"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 73,
-      "type": "VAEDecode",
-      "pos": [
-        1470,
-        650
-      ],
-      "size": [
-        210,
-        46
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 23,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 590
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "slot_index": 0,
-          "links": [
-            518,
-            519
-          ]
-        }
-      ],
-      "title": "vae_decode",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.26",
-        "Node name for S&R": "VAEDecode",
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 127,
-      "type": "RandomNoise",
-      "pos": [
-        850,
-        230
-      ],
-      "size": [
-        350,
-        82
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "NOISE",
-          "type": "NOISE",
-          "links": [
-            585
-          ]
-        }
-      ],
-      "title": "seed",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.24",
-        "Node name for S&R": "RandomNoise",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        25191512,
-        "fixed"
-      ]
-    },
-    {
-      "id": 147,
-      "type": "800fb0f5-73f3-4b99-9d1a-1d4d577fe8f6",
-      "pos": [
-        450,
-        230
-      ],
-      "size": [
-        340,
-        470
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "label": "positive",
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            1109
-          ]
-        },
-        {
-          "label": "negative",
-          "name": "CONDITIONING_1",
-          "type": "CONDITIONING",
-          "links": []
-        }
-      ],
-      "title": "prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.50",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "Natural close-up portrait of a woman with soft curly purple hair, light frizz and volume, subtle flyaway strands, smiling gently and making eye contact with the camera, captured with a smartphone in casual morning light, slight uneven lighting on face, soft natural shadows, visible skin texture, light freckles, no heavy retouching, wearing a simple T-shirt, shallow depth of field with a slightly blurred background, hint of a cozy indoor setting like a window or curtain in the back, authentic and candid expression, amateur photography style",
-        30
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 123,
       "type": "EmptySD3LatentImage",
       "pos": [
@@ -616,7 +203,7 @@
         106
       ],
       "flags": {},
-      "order": 17,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -681,7 +268,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -694,78 +281,13 @@
         },
         {
           "label": "anything",
-          "name": "anything18",
-          "type": "*",
-          "link": null
-        }
-      ],
-      "outputs": [],
-      "title": "ew img",
-      "properties": {
-        "cnr_id": "cg-use-everywhere",
-        "ver": "31a9fdbb2f7fdef6b305eae2fd0aa196218c71ac",
-        "Node name for S&R": "Anything Everywhere",
-        "ue_properties": {
-          "version": "7.0.1",
-          "group_restricted": 0,
-          "color_restricted": 0,
-          "widget_ue_connectable": {},
-          "title_regex": null,
-          "input_regex": null,
-          "group_regex": null,
-          "next_input_index": 18
-        }
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 142,
-      "type": "Anything Everywhere",
-      "pos": [
-        450,
-        130
-      ],
-      "size": [
-        172.18905639648438,
-        106
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "color_on": "#B39DDB",
-          "label": "MODEL",
-          "name": "anything",
-          "shape": 7,
-          "type": "MODEL",
-          "link": 971
-        },
-        {
-          "color_on": "#FFD500",
-          "label": "CLIP",
-          "name": "anything11",
-          "type": "CLIP",
-          "link": 972
-        },
-        {
-          "color_on": "#FF6E6E",
-          "label": "VAE",
-          "name": "anything12",
-          "type": "VAE",
-          "link": 973
-        },
-        {
-          "label": "anything",
           "name": "anything45",
           "type": "*",
           "link": null
         }
       ],
       "outputs": [],
-      "title": "ew mcv",
+      "title": "ew img",
       "properties": {
         "cnr_id": "cg-use-everywhere",
         "ver": "31a9fdbb2f7fdef6b305eae2fd0aa196218c71ac",
@@ -797,7 +319,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -828,7 +350,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 10,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -863,7 +385,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 11,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -898,7 +420,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 12,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -920,6 +442,192 @@
       "bgcolor": "#3f5159"
     },
     {
+      "id": 113,
+      "type": "NunchakuFluxDiTLoader",
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        210
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1136
+          ]
+        }
+      ],
+      "title": "svdq_model",
+      "properties": {
+        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
+        "ver": "0.3.4",
+        "Node name for S&R": "NunchakuFluxDiTLoader",
+        "cnr_id": "comfyui-nunchaku",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "fx10-nunchaku-dev-svdq-int4 r32.sft",
+        0,
+        "nunchaku-fp16",
+        "auto",
+        0,
+        "float16",
+        "enabled"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 8,
+      "type": "VAELoader",
+      "pos": [
+        50,
+        1030
+      ],
+      "size": [
+        350,
+        60
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 0,
+          "links": [
+            973
+          ]
+        }
+      ],
+      "title": "vae_model",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "VAELoader",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "fx10-bfl-ae.sft"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 73,
+      "type": "VAEDecode",
+      "pos": [
+        1070,
+        770
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 1155
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            518,
+            519
+          ]
+        }
+      ],
+      "title": "vae_decode",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 80,
+      "type": "PlaySound|pysssss",
+      "pos": [
+        1260,
+        680
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any",
+          "type": "*",
+          "link": 518
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "shape": 6,
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "notify",
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "PlaySound|pysssss",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "on empty queue",
+        0.5,
+        "notify.mp3"
+      ]
+    },
+    {
       "id": 118,
       "type": "ModelSamplingFlux",
       "pos": [
@@ -931,7 +639,7 @@
         130
       ],
       "flags": {},
-      "order": 22,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -962,10 +670,11 @@
           "type": "MODEL",
           "slot_index": 0,
           "links": [
-            971
+            1163
           ]
         }
       ],
+      "title": "modelsampling_flux",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.3.24",
@@ -988,97 +697,138 @@
       "bgcolor": "#335"
     },
     {
-      "id": 113,
-      "type": "NunchakuFluxDiTLoader",
+      "id": 155,
+      "type": "Power Lora Loader (rgthree)",
       "pos": [
         50,
-        230
+        1150
       ],
       "size": [
         350,
-        210
+        118
       ],
       "flags": {},
-      "order": 13,
+      "order": 20,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "dir": 3,
+          "name": "model",
+          "type": "MODEL",
+          "link": 1163
+        },
+        {
+          "dir": 3,
+          "name": "clip",
+          "type": "CLIP",
+          "link": 1164
+        }
+      ],
       "outputs": [
         {
+          "dir": 4,
           "name": "MODEL",
+          "shape": 3,
           "type": "MODEL",
           "links": [
-            1136
+            1165
+          ]
+        },
+        {
+          "dir": 4,
+          "name": "CLIP",
+          "shape": 3,
+          "type": "CLIP",
+          "links": [
+            1166
           ]
         }
       ],
+      "title": "lora_stack",
       "properties": {
-        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
-        "ver": "0.3.4",
-        "Node name for S&R": "NunchakuFluxDiTLoader",
-        "cnr_id": "comfyui-nunchaku",
+        "cnr_id": "rgthree-comfy",
+        "ver": "110e4ef1dbf2ea20ec39ae5a737bd5e56d4e54c2",
+        "Show Strengths": "Single Strength",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.0.1"
         }
       },
       "widgets_values": [
-        "fx10-nunchaku-dev-svdq-int4 r32.sft",
-        0,
-        "nunchaku-fp16",
-        "auto",
-        0,
-        "float16",
-        "enabled"
+        {},
+        {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        {},
+        ""
       ],
       "color": "#223",
       "bgcolor": "#335"
     },
     {
-      "id": 153,
-      "type": "NunchakuFluxLoraLoader",
+      "id": 142,
+      "type": "Anything Everywhere",
       "pos": [
-        50,
-        500
+        450,
+        130
       ],
       "size": [
-        350,
-        82
+        172.18905639648438,
+        106
       ],
-      "flags": {},
-      "order": 19,
+      "flags": {
+        "collapsed": true
+      },
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
-          "name": "model",
+          "color_on": "#B39DDB",
+          "label": "MODEL",
+          "name": "anything",
+          "shape": 7,
           "type": "MODEL",
-          "link": 1136
-        }
-      ],
-      "outputs": [
+          "link": 1165
+        },
         {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            1137
-          ]
+          "color_on": "#FFD500",
+          "label": "CLIP",
+          "name": "anything11",
+          "type": "CLIP",
+          "link": 1166
+        },
+        {
+          "color_on": "#FF6E6E",
+          "label": "VAE",
+          "name": "anything12",
+          "type": "VAE",
+          "link": 973
+        },
+        {
+          "label": "anything",
+          "name": "anything72",
+          "type": "*",
+          "link": null
         }
       ],
+      "outputs": [],
+      "title": "ew mcv",
       "properties": {
-        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
-        "ver": "0.3.4",
-        "Node name for S&R": "NunchakuFluxLoraLoader",
-        "cnr_id": "comfyui-nunchaku",
+        "cnr_id": "cg-use-everywhere",
+        "ver": "31a9fdbb2f7fdef6b305eae2fd0aa196218c71ac",
+        "Node name for S&R": "Anything Everywhere",
         "ue_properties": {
+          "version": "7.0.1",
+          "group_restricted": 0,
+          "color_restricted": 0,
           "widget_ue_connectable": {},
-          "version": "7.0.1"
+          "title_regex": null,
+          "input_regex": null,
+          "group_regex": null,
+          "next_input_index": 72
         }
       },
-      "widgets_values": [
-        "01 base\\fx10-alimama-turbo-alpha.sft",
-        1
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
+      "widgets_values": []
     },
     {
       "id": 119,
@@ -1092,7 +842,7 @@
         130
       ],
       "flags": {},
-      "order": 14,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1100,7 +850,7 @@
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            972
+            1164
           ]
         }
       ],
@@ -1122,64 +872,157 @@
       },
       "widgets_values": [
         "flux.1",
-        "t5xxl_fp8_e4m3fn.sft",
         "clip_l.sft",
+        "t5xxl_fp8_e4m3fn.sft",
         512
       ],
       "color": "#223",
       "bgcolor": "#335"
     },
     {
-      "id": 8,
-      "type": "VAELoader",
+      "id": 153,
+      "type": "NunchakuFluxLoraLoader",
       "pos": [
         50,
-        1030
+        500
       ],
       "size": [
         350,
-        60
+        82
       ],
       "flags": {},
       "order": 15,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 1136
+        }
+      ],
       "outputs": [
         {
-          "name": "VAE",
-          "type": "VAE",
-          "slot_index": 0,
+          "name": "MODEL",
+          "type": "MODEL",
           "links": [
-            973
+            1137
           ]
         }
       ],
-      "title": "vae_model",
+      "title": "turbo_model",
       "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.26",
-        "Node name for S&R": "VAELoader",
+        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
+        "ver": "0.3.4",
+        "Node name for S&R": "NunchakuFluxLoraLoader",
+        "cnr_id": "comfyui-nunchaku",
         "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
         }
       },
       "widgets_values": [
-        "fx10-bfl-ae.sft"
+        "01 base\\fx10-alimama-turbo-alpha.sft",
+        1
       ],
       "color": "#223",
       "bgcolor": "#335"
     },
     {
-      "id": 124,
-      "type": "BasicScheduler",
+      "id": 147,
+      "type": "800fb0f5-73f3-4b99-9d1a-1d4d577fe8f6",
+      "pos": [
+        450,
+        230
+      ],
+      "size": [
+        340,
+        470
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "positive",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            1153
+          ]
+        },
+        {
+          "label": "negative",
+          "name": "CONDITIONING_1",
+          "type": "CONDITIONING",
+          "links": [
+            1154
+          ]
+        }
+      ],
+      "title": "prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "CGI image of a large, detailed, gray elephant sitting in a snowy forest. The elephant, with textured skin and prominent tusks, sits centered in the image, facing forward with its massive ears flared out. It has a slightly playful, inviting expression. To the left, a wooden sign with \"yaiol\" written on it stands in the snow, partially covered in a snow cap. The background features tall, snow-covered evergreen trees, creating a serene winter forest scene. The lighting is soft and diffused, giving a calm, overcast feel to the image. The overall color palette is cool, dominated by shades of gray and white.",
+        30
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 156,
+      "type": "MarkdownNote",
+      "pos": [
+        -850,
+        -70
+      ],
+      "size": [
+        450,
+        1000
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Help",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "# Reference\n\n```\nIDF  : txt2img-basic-fx10-sdvq\nIDI  : T2I-BAS_FX10_SDVQ\nT2I  : Text to image\nFX10 : Flux.1\nSVDQ : Singular Value Decomposition Quantization\nCDL  : Clip Dual\n```\n\n# Models\n\n## Diffusion Models (SVDQ)\n\n📂 models / diffusion_models\n\nflux.1 dev\n- [⬇️](https://huggingface.co/mit-han-lab/nunchaku-flux.1-dev/resolve/main/svdq-int4_r32-flux.1-dev.safetensors?download=true) svdq-int4_r32-flux.1-dev.safetensors (pre-50-series)\n- [⬇️](https://huggingface.co/mit-han-lab/nunchaku-flux.1-dev/resolve/main/svdq-fp4_r32-flux.1-dev.safetensors?download=true) svdq-fp4_r32-flux.1-dev.safetensors (50-series)\n\nflux.1 schnell\n- [⬇️](https://huggingface.co/mit-han-lab/nunchaku-flux.1-schnell/resolve/main/svdq-int4_r32-flux.1-schnell.safetensors?download=true) svdq-int4_r32-flux.1-schnell.safetensors (pre-50-series)\n- [⬇️](https://huggingface.co/mit-han-lab/nunchaku-flux.1-schnell/resolve/main/svdq-fp4_r32-flux.1-schnell.safetensors?download=true) svdq-fp4_r32-flux.1-schnell.safetensors (50-series)\n\nflux.1 kontext\n- [⬇️](https://huggingface.co/mit-han-lab/nunchaku-flux.1-kontext-dev/resolve/main/svdq-int4_r32-flux.1-kontext-dev.safetensors?download=true) svdq-int4_r32-flux.1-kontext-dev.safetensors (pre-50-series)\n- [⬇️](https://huggingface.co/mit-han-lab/nunchaku-flux.1-kontext-dev/resolve/main/svdq-fp4_r32-flux.1-kontext-dev.safetensors?download=true) svdq-fp4_r32-flux.1-kontext-dev.safetensors (50-series)\n\nflux.1 krea\n- [⬇️](https://huggingface.co/nunchaku-tech/nunchaku-flux.1-krea-dev/resolve/main/svdq-int4_r32-flux.1-krea-dev.safetensors?download=true) svdq-int4_r32-flux.1-krea-dev.safetensors (pre-50-series)\n- [⬇️](https://huggingface.co/nunchaku-tech/nunchaku-flux.1-krea-dev/resolve/main/svdq-fp4_r32-flux.1-krea-dev.safetensors?download=true) svdq-fp4_r32-flux.1-krea-dev.safetensors (50-series)\n\nflux.1 dev colossus\n- [⬇️](https://huggingface.co/nunchaku-tech/nunchaku-flux.1-dev-colossus/resolve/main/svdq-int4_r32-flux.1-dev-colossusv12.safetensors?download=true) svdq-int4_r32-flux.1-dev-colossusv12.safetensors (pre-50-series)\n- [⬇️](https://huggingface.co/nunchaku-tech/nunchaku-flux.1-dev-colossus/resolve/main/svdq-fp4_r32-flux.1-dev-colossusv12.safetensors?download=true) svdq-fp4_r32-flux.1-dev-colossusv12.safetensors (pre-50-series)\n\n## Dual Clip Loader (GGUF) \n\n📂 models / text_encoders\n\n- [⬇️](https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/resolve/main/t5-v1_1-xxl-encoder-Q8_0.gguf?download=true) t5-v1_1-xxl-encoder-Q8_0.gguf [other versions](https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/tree/main) \n- [⬇️](https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors?download=true)  clip_l.safetensor\n\n## VAE\n\n📂 models / vae\n\n- [⬇️](https://huggingface.co/Comfy-Org/Lumina_Image_2.0_Repackaged/resolve/main/split_files/vae/ae.safetensors?download=true) ae.safetensor\n\n## Upscale Model\n\n📂 models / upscale_models  \n\n- [⬇️](https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth?download=true) 4x_NMKD-Siax_200k.pth \n\n✳️​\n\n# Custom Nodes\n\n- [ComfyUI rgthree](https://github.com/rgthree/rgthree-comfy)\n- [ComfyUI Easy Use](https://github.com/yolain/ComfyUI-Easy-Use)\n- [ComfyUI Custom Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)\n- [ComfyUI TiledDiffusion](https://github.com/shiimizu/ComfyUI-TiledDiffusion)\n- [ComfyUI Image Size Tools](https://github.com/TheLustriVA/ComfyUI-Image-Size-Tools)\n- [ComfyUI GGUF](https://github.com/city96/ComfyUI-GGUF)\n- [ComfyUI TeaCache](https://github.com/welltop-cn/ComfyUI-TeaCache)\n\n# Resources\n- [Github](https://github.com/yaiol/ComfyUI-Workflows)\n- [SVDQuant: Absorbing Outliers by Low-Rank Components for 4-Bit Diffusion Models](https://arxiv.org/abs/2411.05007)\n\n\n\n\n"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 154,
+      "type": "KSampler",
       "pos": [
         850,
-        600
+        230
       ],
       "size": [
         350,
-        110
+        486
       ],
       "flags": {},
       "order": 16,
@@ -1189,32 +1032,89 @@
           "name": "model",
           "type": "MODEL",
           "link": null
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 1153
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 1154
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null
         }
       ],
       "outputs": [
         {
-          "name": "SIGMAS",
-          "type": "SIGMAS",
+          "name": "LATENT",
+          "type": "LATENT",
           "links": [
-            588
+            1155
           ]
         }
       ],
-      "title": "scheduler",
+      "title": "ksampler",
       "properties": {
         "cnr_id": "comfy-core",
-        "ver": "0.3.24",
-        "Node name for S&R": "BasicScheduler",
+        "ver": "0.3.51",
+        "Node name for S&R": "KSampler",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.0.1"
         }
       },
       "widgets_values": [
+        25191512,
+        "fixed",
+        8,
+        1,
+        "euler",
         "simple",
-        4,
         1
       ]
+    },
+    {
+      "id": 75,
+      "type": "SaveImage",
+      "pos": [
+        1250,
+        230
+      ],
+      "size": [
+        350,
+        400
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 519
+        }
+      ],
+      "outputs": [],
+      "title": "output",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "%date:yyMMdd%/%date:yyMMdd-hhmmss%-0_T2I-BAS_FX10_SDVQ_%ksampler.seed%"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     }
   ],
   "links": [
@@ -1763,62 +1663,6 @@
       "INT"
     ],
     [
-      585,
-      127,
-      0,
-      128,
-      0,
-      "NOISE"
-    ],
-    [
-      586,
-      126,
-      0,
-      128,
-      1,
-      "GUIDER"
-    ],
-    [
-      587,
-      125,
-      0,
-      128,
-      2,
-      "SAMPLER"
-    ],
-    [
-      588,
-      124,
-      0,
-      128,
-      3,
-      "SIGMAS"
-    ],
-    [
-      590,
-      128,
-      0,
-      73,
-      0,
-      "LATENT"
-    ],
-    [
-      971,
-      118,
-      0,
-      142,
-      0,
-      "MODEL"
-    ],
-    [
-      972,
-      119,
-      0,
-      142,
-      1,
-      "CLIP"
-    ],
-    [
       973,
       8,
       0,
@@ -1843,14 +1687,6 @@
       "INT"
     ],
     [
-      1109,
-      147,
-      0,
-      126,
-      1,
-      "CONDITIONING"
-    ],
-    [
       1130,
       123,
       0,
@@ -1873,6 +1709,62 @@
       118,
       0,
       "MODEL"
+    ],
+    [
+      1153,
+      147,
+      0,
+      154,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      1154,
+      147,
+      1,
+      154,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      1155,
+      154,
+      0,
+      73,
+      0,
+      "LATENT"
+    ],
+    [
+      1163,
+      118,
+      0,
+      155,
+      0,
+      "MODEL"
+    ],
+    [
+      1164,
+      119,
+      0,
+      155,
+      1,
+      "CLIP"
+    ],
+    [
+      1165,
+      155,
+      0,
+      142,
+      0,
+      "MODEL"
+    ],
+    [
+      1166,
+      155,
+      1,
+      142,
+      1,
+      "CLIP"
     ]
   ],
   "groups": [],
@@ -2033,7 +1925,7 @@
               }
             },
             "widgets_values": [
-              "Natural close-up portrait of a woman with soft curly purple hair, light frizz and volume, subtle flyaway strands, smiling gently and making eye contact with the camera, captured with a smartphone in casual morning light, slight uneven lighting on face, soft natural shadows, visible skin texture, light freckles, no heavy retouching, wearing a simple T-shirt, shallow depth of field with a slightly blurred background, hint of a cozy indoor setting like a window or curtain in the back, authentic and candid expression, amateur photography style"
+              "CGI image of a large, detailed, gray elephant sitting in a snowy forest. The elephant, with textured skin and prominent tusks, sits centered in the image, facing forward with its massive ears flared out. It has a slightly playful, inviting expression. To the left, a wooden sign with \"yaiol\" written on it stands in the snow, partially covered in a snow cap. The background features tall, snow-covered evergreen trees, creating a serene winter forest scene. The lighting is soft and diffused, giving a calm, overcast feel to the image. The overall color palette is cool, dominated by shades of gray and white."
             ]
           },
           {
@@ -2238,10 +2130,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9229599817706517,
+      "scale": 0.7627768444385643,
       "offset": [
-        950,
-        200
+        575.924015297468,
+        41.16112772378685
       ]
     },
     "groupNodes": {},
@@ -2254,22 +2146,6 @@
     },
     "ue_links": [
       {
-        "downstream": 126,
-        "downstream_slot": 0,
-        "upstream": "118",
-        "upstream_slot": 0,
-        "controller": 142,
-        "type": "MODEL"
-      },
-      {
-        "downstream": 128,
-        "downstream_slot": 4,
-        "upstream": "123",
-        "upstream_slot": 0,
-        "controller": 148,
-        "type": "LATENT"
-      },
-      {
         "downstream": 73,
         "downstream_slot": 1,
         "upstream": "8",
@@ -2280,18 +2156,26 @@
       {
         "downstream": 147,
         "downstream_slot": 0,
-        "upstream": "119",
-        "upstream_slot": 0,
+        "upstream": "155",
+        "upstream_slot": 1,
         "controller": 142,
         "type": "CLIP"
       },
       {
-        "downstream": 124,
+        "downstream": 154,
         "downstream_slot": 0,
-        "upstream": "118",
+        "upstream": "155",
         "upstream_slot": 0,
         "controller": 142,
         "type": "MODEL"
+      },
+      {
+        "downstream": 154,
+        "downstream_slot": 3,
+        "upstream": "123",
+        "upstream_slot": 0,
+        "controller": 148,
+        "type": "LATENT"
       }
     ],
     "VHS_latentpreview": false,
@@ -2299,13 +2183,12 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "links_added_by_ue": [
-      1143,
-      1144,
-      1145,
-      1146,
-      1147
+      1183,
+      1184,
+      1185,
+      1186
     ],
-    "frontendVersion": "1.25.10"
+    "frontendVersion": "1.25.11"
   },
   "version": 0.4
 }
