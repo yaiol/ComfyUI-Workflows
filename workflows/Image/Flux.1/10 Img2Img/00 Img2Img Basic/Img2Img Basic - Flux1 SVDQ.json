@@ -2,7 +2,7 @@
   "id": "18e718d4-c69e-43fd-80ae-92c71bbf88d4",
   "revision": 0,
   "last_node_id": 100,
-  "last_link_id": 312,
+  "last_link_id": 339,
   "nodes": [
     {
       "id": 54,
@@ -395,7 +395,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 24,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -408,7 +408,7 @@
         },
         {
           "label": "anything",
-          "name": "anything23",
+          "name": "anything26",
           "type": "*",
           "link": null
         }
@@ -423,7 +423,7 @@
           "version": "7.0.1",
           "group_restricted": 0,
           "color_restricted": 0,
-          "next_input_index": 23,
+          "next_input_index": 26,
           "widget_ue_connectable": {}
         }
       },
@@ -470,58 +470,6 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
-    },
-    {
-      "id": 39,
-      "type": "VAEEncode",
-      "pos": [
-        1560,
-        550
-      ],
-      "size": [
-        350,
-        50
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "pixels",
-          "type": "IMAGE",
-          "link": 311
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "slot_index": 0,
-          "links": [
-            69
-          ]
-        }
-      ],
-      "title": "vae_encode",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.26",
-        "Node name for S&R": "VAEEncode",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 56,
@@ -691,12 +639,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_fqhej_00003_.png&type=temp&subfolder=&rand=0.23902244126566874"
+            "url": "/api/view?filename=rgthree.compare._temp_ovgga_00001_.png&type=temp&subfolder=&rand=0.2916570630684454"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_fqhej_00004_.png&type=temp&subfolder=&rand=0.45232885252706934"
+            "url": "/api/view?filename=rgthree.compare._temp_ovgga_00002_.png&type=temp&subfolder=&rand=0.23036802594725692"
           }
         ]
       ]
@@ -1032,7 +980,7 @@
         130
       ],
       "flags": {},
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1098,10 +1046,10 @@
       ],
       "title": "text_encoder",
       "properties": {
-        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
+        "cnr_id": "comfyui-nunchaku",
         "ver": "0.3.4",
         "Node name for S&R": "NunchakuTextEncoderLoaderV2",
-        "cnr_id": "comfyui-nunchaku",
+        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
         "ue_properties": {
           "widget_ue_connectable": {
             "model_type": true,
@@ -1117,47 +1065,6 @@
         "t5xxl_fp8_e4m3fn.sft",
         "clip_l.sft",
         512
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 99,
-      "type": "VAELoader",
-      "pos": [
-        50,
-        880
-      ],
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "slot_index": 0,
-          "links": [
-            288
-          ]
-        }
-      ],
-      "title": "vae_model",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.26",
-        "Node name for S&R": "VAELoader",
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": [
-        "fx10-bfl-ae.sft"
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -1202,7 +1109,7 @@
         },
         {
           "label": "anything",
-          "name": "anything49",
+          "name": "anything52",
           "type": "*",
           "link": null
         }
@@ -1221,56 +1128,10 @@
           "title_regex": null,
           "input_regex": null,
           "group_regex": null,
-          "next_input_index": 49
+          "next_input_index": 52
         }
       },
       "widgets_values": []
-    },
-    {
-      "id": 96,
-      "type": "NunchakuFluxDiTLoader",
-      "pos": [
-        50,
-        230
-      ],
-      "size": [
-        350,
-        210
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            285
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
-        "ver": "0.3.4",
-        "Node name for S&R": "NunchakuFluxDiTLoader",
-        "cnr_id": "comfyui-nunchaku",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "fx10-nunchaku-dev-svdq-int4 r32.sft",
-        0,
-        "nunchaku-fp16",
-        "auto",
-        0,
-        "float16",
-        "enabled"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 88,
@@ -1284,7 +1145,7 @@
         154
       ],
       "flags": {},
-      "order": 16,
+      "order": 14,
       "mode": 4,
       "inputs": [
         {
@@ -1333,7 +1194,7 @@
         450
       ],
       "flags": {},
-      "order": 17,
+      "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1381,7 +1242,7 @@
         100
       ],
       "flags": {},
-      "order": 18,
+      "order": 16,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1435,6 +1296,145 @@
       "widgets_values": [
         "%date:yyMMdd%/%date:yyMMdd-hhmmss%_I2I-BAS_FX10_SVDQ_%ksampler.seed%"
       ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 96,
+      "type": "NunchakuFluxDiTLoader",
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        210
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            285
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-nunchaku",
+        "ver": "0.3.4",
+        "Node name for S&R": "NunchakuFluxDiTLoader",
+        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "flux1-nunchaku-dev-svdq-int4 r32.sft",
+        0,
+        "nunchaku-fp16",
+        "auto",
+        0,
+        "float16",
+        "enabled"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 99,
+      "type": "VAELoader",
+      "pos": [
+        50,
+        880
+      ],
+      "size": [
+        350,
+        60
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 0,
+          "links": [
+            288
+          ]
+        }
+      ],
+      "title": "vae_model",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "VAELoader",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "flux1-bfl-ae.sft"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 39,
+      "type": "VAEEncode",
+      "pos": [
+        1470,
+        290
+      ],
+      "size": [
+        350,
+        50
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 311
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            69
+          ]
+        }
+      ],
+      "title": "vae_encode",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "VAEEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [],
       "color": "#323",
       "bgcolor": "#535"
     }
@@ -2636,10 +2636,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7513148009015777,
+      "scale": 1,
       "offset": [
-        549.6040887740062,
-        -47.26681338860803
+        450,
+        200
       ]
     },
     "node_versions": {
@@ -2655,7 +2655,7 @@
     },
     "ue_links": [
       {
-        "downstream": 39,
+        "downstream": 54,
         "downstream_slot": 0,
         "upstream": "31",
         "upstream_slot": 0,
@@ -2663,12 +2663,28 @@
         "type": "IMAGE"
       },
       {
-        "downstream": 39,
-        "downstream_slot": 1,
+        "downstream": 50,
+        "downstream_slot": 4,
         "upstream": "99",
         "upstream_slot": 0,
         "controller": 100,
         "type": "VAE"
+      },
+      {
+        "downstream": 56,
+        "downstream_slot": 4,
+        "upstream": "99",
+        "upstream_slot": 0,
+        "controller": 100,
+        "type": "VAE"
+      },
+      {
+        "downstream": 57,
+        "downstream_slot": 0,
+        "upstream": "31",
+        "upstream_slot": 0,
+        "controller": 64,
+        "type": "IMAGE"
       },
       {
         "downstream": 46,
@@ -2695,12 +2711,20 @@
         "type": "CLIP"
       },
       {
-        "downstream": 3,
+        "downstream": 88,
         "downstream_slot": 0,
         "upstream": "97",
         "upstream_slot": 0,
         "controller": 100,
         "type": "MODEL"
+      },
+      {
+        "downstream": 39,
+        "downstream_slot": 1,
+        "upstream": "99",
+        "upstream_slot": 0,
+        "controller": 100,
+        "type": "VAE"
       }
     ],
     "VHS_latentpreview": false,
@@ -2708,14 +2732,17 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "links_added_by_ue": [
-      305,
-      306,
-      307,
-      308,
-      309,
-      310
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339
     ],
-    "frontendVersion": "1.25.10"
+    "frontendVersion": "1.26.13"
   },
   "version": 0.4
 }
