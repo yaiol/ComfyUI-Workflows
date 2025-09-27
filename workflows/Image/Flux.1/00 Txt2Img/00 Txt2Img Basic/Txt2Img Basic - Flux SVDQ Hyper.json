@@ -1,8 +1,8 @@
 {
   "id": "404d2e1e-e2f4-4515-a7b8-b3fc0f138443",
   "revision": 0,
-  "last_node_id": 156,
-  "last_link_id": 1194,
+  "last_node_id": 157,
+  "last_link_id": 1202,
   "nodes": [
     {
       "id": 39,
@@ -129,69 +129,6 @@
       "shape": 1
     },
     {
-      "id": 93,
-      "type": "FluxResolutionNode",
-      "pos": [
-        -350,
-        230
-      ],
-      "size": [
-        350,
-        214
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "width",
-          "type": "INT",
-          "links": [
-            580,
-            1099
-          ]
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": [
-            581,
-            1098
-          ]
-        },
-        {
-          "name": "resolution",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "preview",
-          "type": "IMAGE",
-          "links": []
-        }
-      ],
-      "title": "resolution",
-      "properties": {
-        "cnr_id": "controlaltai-nodes",
-        "ver": "721492b66c9cede8ae23ae10615462ad80cfd061",
-        "Node name for S&R": "FluxResolutionNode",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "1.0",
-        "1:1 (Perfect Square)",
-        "64",
-        false,
-        "1:1"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 123,
       "type": "EmptySD3LatentImage",
       "pos": [
@@ -203,7 +140,7 @@
         106
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -212,7 +149,7 @@
           "widget": {
             "name": "width"
           },
-          "link": 1099
+          "link": 1195
         },
         {
           "name": "height",
@@ -220,7 +157,7 @@
           "widget": {
             "name": "height"
           },
-          "link": 1098
+          "link": 1196
         }
       ],
       "outputs": [
@@ -268,7 +205,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -281,7 +218,7 @@
         },
         {
           "label": "anything",
-          "name": "anything33",
+          "name": "anything35",
           "type": "*",
           "link": null
         }
@@ -300,7 +237,7 @@
           "title_regex": null,
           "input_regex": null,
           "group_regex": null,
-          "next_input_index": 33
+          "next_input_index": 35
         }
       },
       "widgets_values": []
@@ -319,7 +256,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -350,7 +287,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -385,7 +322,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -420,7 +357,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -442,142 +379,6 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 113,
-      "type": "NunchakuFluxDiTLoader",
-      "pos": [
-        50,
-        230
-      ],
-      "size": [
-        350,
-        210
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            1136
-          ]
-        }
-      ],
-      "title": "svdq_model",
-      "properties": {
-        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
-        "ver": "0.3.4",
-        "Node name for S&R": "NunchakuFluxDiTLoader",
-        "cnr_id": "comfyui-nunchaku",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "fx10-nunchaku-dev-svdq-int4 r32.sft",
-        0,
-        "nunchaku-fp16",
-        "auto",
-        0,
-        "float16",
-        "enabled"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 8,
-      "type": "VAELoader",
-      "pos": [
-        50,
-        1030
-      ],
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "slot_index": 0,
-          "links": [
-            973
-          ]
-        }
-      ],
-      "title": "vae_model",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.26",
-        "Node name for S&R": "VAELoader",
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": [
-        "fx10-bfl-ae.sft"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 153,
-      "type": "NunchakuFluxLoraLoader",
-      "pos": [
-        50,
-        500
-      ],
-      "size": [
-        350,
-        82
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 1136
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            1137
-          ]
-        }
-      ],
-      "title": "turbo_model",
-      "properties": {
-        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
-        "ver": "0.3.4",
-        "Node name for S&R": "NunchakuFluxLoraLoader",
-        "cnr_id": "comfyui-nunchaku",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "01 base\\fx10-bd-hyper-8s.sft",
-        0.13
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 73,
       "type": "VAEDecode",
       "pos": [
@@ -591,7 +392,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -642,7 +443,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -687,7 +488,7 @@
         130
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -701,7 +502,7 @@
           "widget": {
             "name": "width"
           },
-          "link": 580
+          "link": 1197
         },
         {
           "name": "height",
@@ -709,7 +510,7 @@
           "widget": {
             "name": "height"
           },
-          "link": 581
+          "link": 1198
         }
       ],
       "outputs": [
@@ -756,7 +557,7 @@
         130
       ],
       "flags": {},
-      "order": 11,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -770,10 +571,10 @@
       ],
       "title": "text_encoder",
       "properties": {
-        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
+        "cnr_id": "comfyui-nunchaku",
         "ver": "0.3.4",
         "Node name for S&R": "NunchakuTextEncoderLoaderV2",
-        "cnr_id": "comfyui-nunchaku",
+        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
         "ue_properties": {
           "widget_ue_connectable": {
             "model_type": true,
@@ -805,7 +606,7 @@
         118
       ],
       "flags": {},
-      "order": 20,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -903,7 +704,7 @@
         },
         {
           "label": "anything",
-          "name": "anything60",
+          "name": "anything62",
           "type": "*",
           "link": null
         }
@@ -922,7 +723,7 @@
           "title_regex": null,
           "input_regex": null,
           "group_regex": null,
-          "next_input_index": 60
+          "next_input_index": 62
         }
       },
       "widgets_values": []
@@ -941,7 +742,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 12,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -970,7 +771,7 @@
         470
       ],
       "flags": {},
-      "order": 13,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -1025,7 +826,7 @@
         486
       ],
       "flags": {},
-      "order": 16,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1090,7 +891,7 @@
         400
       ],
       "flags": {},
-      "order": 22,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1115,6 +916,210 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 157,
+      "type": "ResolutionNode",
+      "pos": [
+        -350,
+        230
+      ],
+      "size": [
+        350,
+        214
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            1195,
+            1197
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            1196,
+            1198
+          ]
+        },
+        {
+          "name": "resolution",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "preview",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "resolution",
+      "properties": {
+        "Node name for S&R": "ResolutionNode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "megapixel": true,
+            "aspect_ratio": true,
+            "divisible_by": true,
+            "use_custom": true,
+            "aspect_ratio_custom": true
+          },
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        1,
+        "Square 1:1 (1.00)",
+        "64",
+        false,
+        "1:1"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 113,
+      "type": "NunchakuFluxDiTLoader",
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        210
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1136
+          ]
+        }
+      ],
+      "title": "svdq_model",
+      "properties": {
+        "cnr_id": "comfyui-nunchaku",
+        "ver": "0.3.4",
+        "Node name for S&R": "NunchakuFluxDiTLoader",
+        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "flux1-nunchaku-dev-svdq-int4 r32.sft",
+        0,
+        "nunchaku-fp16",
+        "auto",
+        0,
+        "float16",
+        "enabled"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 153,
+      "type": "NunchakuFluxLoraLoader",
+      "pos": [
+        50,
+        500
+      ],
+      "size": [
+        350,
+        82
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 1136
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1137
+          ]
+        }
+      ],
+      "title": "turbo_model",
+      "properties": {
+        "cnr_id": "comfyui-nunchaku",
+        "ver": "0.3.4",
+        "Node name for S&R": "NunchakuFluxLoraLoader",
+        "aux_id": "nunchaku-tech/ComfyUI-nunchaku",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "01 base\\flux1-bd-hyper-8s.sft",
+        0.13
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 8,
+      "type": "VAELoader",
+      "pos": [
+        50,
+        1030
+      ],
+      "size": [
+        350,
+        60
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 0,
+          "links": [
+            973
+          ]
+        }
+      ],
+      "title": "vae_model",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "VAELoader",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "flux1-bfl-ae.sft"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     }
   ],
   "links": [
@@ -1647,44 +1652,12 @@
       "IMAGE"
     ],
     [
-      580,
-      93,
-      0,
-      118,
-      1,
-      "INT"
-    ],
-    [
-      581,
-      93,
-      1,
-      118,
-      2,
-      "INT"
-    ],
-    [
       973,
       8,
       0,
       142,
       2,
       "VAE"
-    ],
-    [
-      1098,
-      93,
-      1,
-      123,
-      1,
-      "INT"
-    ],
-    [
-      1099,
-      93,
-      0,
-      123,
-      0,
-      "INT"
     ],
     [
       1130,
@@ -1765,6 +1738,38 @@
       142,
       1,
       "CLIP"
+    ],
+    [
+      1195,
+      157,
+      0,
+      123,
+      0,
+      "INT"
+    ],
+    [
+      1196,
+      157,
+      1,
+      123,
+      1,
+      "INT"
+    ],
+    [
+      1197,
+      157,
+      0,
+      118,
+      1,
+      "INT"
+    ],
+    [
+      1198,
+      157,
+      1,
+      118,
+      2,
+      "INT"
     ]
   ],
   "groups": [],
@@ -2130,10 +2135,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.3513057093103964,
+      "scale": 1.798587899092141,
       "offset": [
-        -441.5044140373755,
-        -39.403530884964454
+        948.8138854376231,
+        199.40695968633264
       ]
     },
     "groupNodes": {},
@@ -2183,12 +2188,12 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "links_added_by_ue": [
-      1191,
-      1192,
-      1193,
-      1194
+      1199,
+      1200,
+      1201,
+      1202
     ],
-    "frontendVersion": "1.25.11"
+    "frontendVersion": "1.26.13"
   },
   "version": 0.4
 }

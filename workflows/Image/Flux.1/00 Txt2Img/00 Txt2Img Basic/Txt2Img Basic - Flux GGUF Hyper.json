@@ -1,8 +1,8 @@
 {
   "id": "404d2e1e-e2f4-4515-a7b8-b3fc0f138443",
   "revision": 0,
-  "last_node_id": 120,
-  "last_link_id": 637,
+  "last_node_id": 121,
+  "last_link_id": 645,
   "nodes": [
     {
       "id": 39,
@@ -140,7 +140,7 @@
         },
         {
           "label": "anything",
-          "name": "anything46",
+          "name": "anything48",
           "type": "*",
           "link": null
         }
@@ -156,7 +156,7 @@
           "group_restricted": 0,
           "color_restricted": 0,
           "widget_ue_connectable": {},
-          "next_input_index": 46
+          "next_input_index": 48
         }
       },
       "widgets_values": []
@@ -193,47 +193,6 @@
       "shape": 1
     },
     {
-      "id": 8,
-      "type": "VAELoader",
-      "pos": [
-        50,
-        230
-      ],
-      "size": [
-        350,
-        60
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "slot_index": 0,
-          "links": [
-            111
-          ]
-        }
-      ],
-      "title": "vae_model",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.26",
-        "Node name for S&R": "VAELoader",
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": [
-        "fx10-bfl-ae.sft"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 113,
       "type": "Label (rgthree)",
       "pos": [
@@ -247,7 +206,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -282,7 +241,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -324,7 +283,7 @@
           "widget": {
             "name": "width"
           },
-          "link": 328
+          "link": 638
         },
         {
           "name": "height",
@@ -332,7 +291,7 @@
           "widget": {
             "name": "height"
           },
-          "link": 329
+          "link": 639
         }
       ],
       "outputs": [
@@ -389,7 +348,7 @@
         },
         {
           "label": "anything",
-          "name": "anything28",
+          "name": "anything30",
           "type": "*",
           "link": null
         }
@@ -408,7 +367,7 @@
           "title_regex": null,
           "input_regex": null,
           "group_regex": null,
-          "next_input_index": 28
+          "next_input_index": 30
         }
       },
       "widgets_values": []
@@ -478,7 +437,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -509,7 +468,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -542,7 +501,7 @@
         154
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -593,7 +552,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -628,7 +587,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -663,7 +622,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -730,7 +689,7 @@
         470
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -842,52 +801,6 @@
       ]
     },
     {
-      "id": 65,
-      "type": "UnetLoaderGGUFAdvanced",
-      "pos": [
-        50,
-        350
-      ],
-      "size": [
-        350,
-        130
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 14,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "slot_index": 0,
-          "links": [
-            621
-          ]
-        }
-      ],
-      "title": "gguf_model",
-      "properties": {
-        "cnr_id": "ComfyUI-GGUF",
-        "ver": "bc5223b0e37e053dbec2ea5e5f52c2fd4b8f712a",
-        "Node name for S&R": "UnetLoaderGGUFAdvanced",
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": [
-        "fx10-bfl-dev-Q8_0.gguf",
-        "default",
-        "default",
-        true
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 54,
       "type": "ModelSamplingFlux",
       "pos": [
@@ -913,7 +826,7 @@
           "widget": {
             "name": "width"
           },
-          "link": 628
+          "link": 640
         },
         {
           "name": "height",
@@ -921,7 +834,7 @@
           "widget": {
             "name": "height"
           },
-          "link": 629
+          "link": 641
         }
       ],
       "outputs": [
@@ -965,7 +878,7 @@
         110
       ],
       "flags": {},
-      "order": 15,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1068,69 +981,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 93,
-      "type": "FluxResolutionNode",
-      "pos": [
-        -350,
-        230
-      ],
-      "size": [
-        350,
-        214
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "width",
-          "type": "INT",
-          "links": [
-            328,
-            628
-          ]
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": [
-            329,
-            629
-          ]
-        },
-        {
-          "name": "resolution",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "preview",
-          "type": "IMAGE",
-          "links": null
-        }
-      ],
-      "title": "resolution",
-      "properties": {
-        "cnr_id": "controlaltai-nodes",
-        "ver": "721492b66c9cede8ae23ae10615462ad80cfd061",
-        "Node name for S&R": "FluxResolutionNode",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "1.0",
-        "1:1 (Perfect Square)",
-        "64",
-        false,
-        "1:1"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 80,
       "type": "PlaySound|pysssss",
       "pos": [
@@ -1178,6 +1028,161 @@
       ]
     },
     {
+      "id": 121,
+      "type": "ResolutionNode",
+      "pos": [
+        -350,
+        230
+      ],
+      "size": [
+        350,
+        214
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            638,
+            640
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            639,
+            641
+          ]
+        },
+        {
+          "name": "resolution",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "preview",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "resolution",
+      "properties": {
+        "Node name for S&R": "ResolutionNode",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "megapixel": true,
+            "aspect_ratio": true,
+            "divisible_by": true,
+            "use_custom": true,
+            "aspect_ratio_custom": true
+          },
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        1,
+        "Square 1:1 (1.00)",
+        "64",
+        false,
+        "1:1"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 8,
+      "type": "VAELoader",
+      "pos": [
+        50,
+        230
+      ],
+      "size": [
+        350,
+        60
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 0,
+          "links": [
+            111
+          ]
+        }
+      ],
+      "title": "vae_model",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.26",
+        "Node name for S&R": "VAELoader",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "flux1-bfl-ae.sft"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 65,
+      "type": "UnetLoaderGGUFAdvanced",
+      "pos": [
+        50,
+        350
+      ],
+      "size": [
+        350,
+        130
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            621
+          ]
+        }
+      ],
+      "title": "gguf_model",
+      "properties": {
+        "cnr_id": "ComfyUI-GGUF",
+        "ver": "bc5223b0e37e053dbec2ea5e5f52c2fd4b8f712a",
+        "Node name for S&R": "UnetLoaderGGUFAdvanced",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "flux1-bfl-dev-Q8_0.gguf",
+        "default",
+        "default",
+        true
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 120,
       "type": "LoraLoader",
       "pos": [
@@ -1222,10 +1227,15 @@
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.3.55",
-        "Node name for S&R": "LoraLoader"
+        "Node name for S&R": "LoraLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
-        "01 base\\fx10-bd-hyper-8s.sft",
+        "01 base\\flux1-bd-hyper-8s.sft",
         0.13,
         1
       ],
@@ -1787,22 +1797,6 @@
       "INT"
     ],
     [
-      328,
-      93,
-      0,
-      20,
-      0,
-      "INT"
-    ],
-    [
-      329,
-      93,
-      1,
-      20,
-      1,
-      "INT"
-    ],
-    [
       518,
       73,
       0,
@@ -1883,16 +1877,32 @@
       "MODEL"
     ],
     [
-      628,
-      93,
+      638,
+      121,
+      0,
+      20,
+      0,
+      "INT"
+    ],
+    [
+      639,
+      121,
+      1,
+      20,
+      1,
+      "INT"
+    ],
+    [
+      640,
+      121,
       0,
       54,
       1,
       "INT"
     ],
     [
-      629,
-      93,
+      641,
+      121,
       1,
       54,
       2,
@@ -2262,10 +2272,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.2284597357367324,
+      "scale": 2.176291357901502,
       "offset": [
-        217.69690817624289,
-        -274.8679604434942
+        950,
+        200
       ]
     },
     "groupNodes": {},
@@ -2315,12 +2325,12 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "links_added_by_ue": [
-      634,
-      635,
-      636,
-      637
+      642,
+      643,
+      644,
+      645
     ],
-    "frontendVersion": "1.25.11"
+    "frontendVersion": "1.26.13"
   },
   "version": 0.4
 }
